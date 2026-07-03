@@ -12,8 +12,10 @@ def make_df():
     rows = []
     dates = pd.date_range("2021-01-01", periods=40, freq="D")
     for i, date in enumerate(dates):
+        is_idf = i % 2 == 0
         rows.append({
-            "Région": "Île-de-France" if i % 2 == 0 else "Nouvelle-Aquitaine",
+            "Région": "Île-de-France" if is_idf else "Nouvelle-Aquitaine",
+            "Code INSEE région": "11" if is_idf else "75",
             "Date": date,
             "Consommation (MW)": 1000 + i * 10,
             "Thermique (MW)": 100 + i,
@@ -82,7 +84,8 @@ def test_regional_map_data():
     df = make_df()
     map_df = d.regional_map_data(df)
     assert set(map_df["Région"]) == {"Île-de-France", "Nouvelle-Aquitaine"}
-    assert {"lat", "lon", "Consommation (MW)"}.issubset(map_df.columns)
+    assert {"Code INSEE région", "Consommation (MW)"}.issubset(map_df.columns)
+    assert set(map_df["Code INSEE région"]) == {"11", "75"}
 
 
 def test_regional_map_data_empty():

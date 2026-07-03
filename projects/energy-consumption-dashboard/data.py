@@ -19,12 +19,7 @@ TCO_COLUMNS = [
     "TCO Hydraulique (%)", "TCO Solaire (%)", "TCO Bioénergies (%)",
 ]
 RENEWABLE_SOURCES = ["Eolien", "Solaire", "Hydraulique", "Bioénergies"]
-# Approximate regional centroids (lat, lon), used only to place bubbles on the map.
-REGION_COORDINATES = {
-    "Île-de-France": (48.7, 2.5),
-    "Nouvelle-Aquitaine": (45.2, 0.3),
-    "Auvergne-Rhône-Alpes": (45.3, 4.0),
-}
+GEOJSON_PATH = os.path.join(_DATA_DIR, "france_regions.geojson")
 MODEL_FACTORIES = {
     "Linear Regression": lambda: LinearRegression(),
     "Ridge Regression": lambda: Ridge(alpha=1.0),
@@ -40,7 +35,7 @@ MODEL_FACTORIES = {
 def load_data(path=None):
     if path is None:
         path = os.path.join(_DATA_DIR, "eco2mix_sample.csv")
-    df = pd.read_csv(path, sep=";")
+    df = pd.read_csv(path, sep=";", dtype={"Code INSEE région": str})
     for col in PRODUCTION_COLUMNS:
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
     df["Consommation (MW)"] = pd.to_numeric(df["Consommation (MW)"], errors="coerce").fillna(0)
@@ -83,14 +78,10 @@ def consumption_by_region(df):
 
 
 def regional_map_data(df):
-    region_series = consumption_by_region(df)
-    rows = [
-        {"Région": region, "Consommation (MW)": total, "lat": lat, "lon": lon}
-        for region, total in region_series.items()
-        for lat, lon in [REGION_COORDINATES[region]]
-        if region in REGION_COORDINATES
-    ]
-    return pd.DataFrame(rows, columns=["Région", "Consommation (MW)", "lat", "lon"])
+    if "Code INSEE région" not in df.columns or df.empty:
+        return pd.DataFrame(columns=["Région", "Code INSEE région", "Consommation (MW)"])
+    grouped = df.groupby(["Région", "Code INSEE région"])["Consommation (MW)"].sum().reset_index()
+    return grouped.sort_values("Consommation (MW)", ascending=False).reset_index(drop=True)
 
 
 def map_insight(map_df):
@@ -98,8 +89,8 @@ def map_insight(map_df):
         return "No regional data to plot on the map."
     top = map_df.loc[map_df["Consommation (MW)"].idxmax()]
     return (
-        f"Bubble size and color both track consumption — **{top['Région']}** is the biggest "
-        f"circle on the map, meaning it consumes the most electricity of the selected regions."
+        f"Color intensity tracks total consumption — **{top['Région']}** is the darkest "
+        f"region on the map, meaning it consumes the most electricity of the selected regions."
     )
 
 

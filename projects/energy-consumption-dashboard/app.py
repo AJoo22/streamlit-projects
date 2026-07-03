@@ -1,4 +1,6 @@
 # projects/energy-consumption-dashboard/app.py
+import json
+
 import streamlit as st
 import plotly.express as px
 import pandas as pd
@@ -11,9 +13,12 @@ st.set_page_config(page_title="Energy Consumption Dashboard", page_icon="⚡", l
 # color across every chart on the page, instead of shifting with Plotly's
 # default palette depending on which categories happen to be filtered in.
 REGION_COLORS = {
-    "Île-de-France": "#4C78A8",
-    "Nouvelle-Aquitaine": "#F58518",
-    "Auvergne-Rhône-Alpes": "#54A24B",
+    "Île-de-France": "#4C78A8", "Nouvelle-Aquitaine": "#F58518",
+    "Auvergne-Rhône-Alpes": "#54A24B", "Bourgogne-Franche-Comté": "#E45756",
+    "Bretagne": "#72B7B2", "Centre-Val de Loire": "#EECA3B",
+    "Grand Est": "#B279A2", "Hauts-de-France": "#FF9DA6",
+    "Normandie": "#9D755D", "Occitanie": "#BAB0AC",
+    "Pays de la Loire": "#4C78A8", "Provence-Alpes-Côte d'Azur": "#F58518",
 }
 SOURCE_COLORS = {
     "Thermique": "#B279A2", "Nucléaire": "#E45756", "Eolien": "#54A24B",
@@ -21,9 +26,16 @@ SOURCE_COLORS = {
     "Bioénergies": "#72B7B2",
 }
 
+
+@st.cache_resource
+def get_geojson():
+    with open(d.GEOJSON_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
 st.title("⚡ France Energy Consumption & Production Dashboard")
 st.caption(
-    "Sample of the public RTE éCO2mix regional dataset (3 regions, 2021+). "
+    "Sample of the public RTE éCO2mix regional dataset (12 mainland regions, 2021–2023). "
     "Full dataset: https://www.rte-france.com/eco2mix"
 )
 st.markdown(
@@ -97,13 +109,14 @@ with tab_overview:
         if map_df.empty:
             st.info("No regional data available for the current selection.")
         else:
-            st.plotly_chart(
-                px.scatter_geo(
-                    map_df, lat="lat", lon="lon", size="Consommation (MW)", color="Consommation (MW)",
-                    hover_name="Région", scope="europe", color_continuous_scale="Reds",
-                ).update_geos(center={"lat": 46.5, "lon": 2.5}, projection_scale=5, showcountries=True),
-                use_container_width=True,
+            fig = px.choropleth(
+                map_df, geojson=get_geojson(), locations="Code INSEE région",
+                featureidkey="properties.code", color="Consommation (MW)",
+                hover_name="Région", color_continuous_scale="Reds",
             )
+            fig.update_geos(fitbounds="locations", visible=False)
+            fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
+            st.plotly_chart(fig, use_container_width=True)
             st.markdown(d.map_insight(map_df))
 
     st.subheader("Production Mix")
