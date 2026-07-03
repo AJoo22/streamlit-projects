@@ -81,3 +81,52 @@ def test_net_worth_trend(tmp_path):
     df = d.load_data(make_csv(tmp_path))
     result = d.net_worth_trend(df)
     assert len(result) == 2
+
+
+def test_kpi_narrative_empty():
+    kpis = {"total_cashflow": 0.0, "total_expenses": 0.0, "avg_monthly_cashflow": 0.0}
+    assert d.kpi_narrative(kpis) == "No data available for the current selection."
+
+
+def test_kpi_narrative_nonempty(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    kpis = d.compute_kpis(df)
+    result = d.kpi_narrative(kpis)
+    assert "more coming in than going out" in result
+    assert "2,200.00" in result
+
+
+def test_cashflow_trend_insight(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    trend = d.cashflow_by_category_over_time(df)
+    result = d.cashflow_trend_insight(trend)
+    assert "CASHFLOW_LAVORO" in result
+
+
+def test_cashflow_trend_insight_empty():
+    assert d.cashflow_trend_insight(pd.DataFrame()) == "No cash flow categories selected."
+
+
+def test_expense_breakdown_insight(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    expenses = d.expense_breakdown(df)
+    result = d.expense_breakdown_insight(expenses)
+    assert "Affitto" in result
+    assert "78%" in result
+
+
+def test_expense_breakdown_insight_empty():
+    assert d.expense_breakdown_insight(pd.Series(dtype=float)) == "No expense categories selected."
+
+
+def test_net_worth_insight(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    net_worth = d.net_worth_trend(df)
+    result = d.net_worth_insight(net_worth)
+    assert "grown" in result
+    assert "200.00" in result
+
+
+def test_net_worth_insight_insufficient_data():
+    net_worth = pd.DataFrame({"Month": [pd.Timestamp("2023-01-01")], "Amount": [500.0]})
+    assert d.net_worth_insight(net_worth) == "Not enough months in the current selection to describe a trend."

@@ -104,3 +104,52 @@ def expense_breakdown(df):
 def net_worth_trend(df):
     net_worth_df = df[df["Category"] == NET_WORTH_CATEGORY]
     return net_worth_df.groupby("Month")["Amount"].sum().reset_index().sort_values("Month")
+
+
+def kpi_narrative(kpis):
+    if kpis["total_cashflow"] == 0 and kpis["total_expenses"] == 0:
+        return "No data available for the current selection."
+    net = kpis["total_cashflow"] - kpis["total_expenses"]
+    direction = "more coming in than going out" if net >= 0 else "more going out than coming in"
+    return (
+        f"In plain terms: over this period there's {direction} — cash flow of "
+        f"**{kpis['total_cashflow']:,.2f}** against expenses of **{kpis['total_expenses']:,.2f}**, "
+        f"averaging **{kpis['avg_monthly_cashflow']:,.2f}** per month."
+    )
+
+
+def cashflow_trend_insight(cashflow_trend_df):
+    if cashflow_trend_df.empty:
+        return "No cash flow categories selected."
+    totals = cashflow_trend_df.groupby("Category")["Amount"].sum().sort_values(ascending=False)
+    top = totals.index[0]
+    return (
+        f"**{top}** contributes the most to cash flow over the selected months — the line "
+        f"for that category should sit above the others most of the time."
+    )
+
+
+def expense_breakdown_insight(expenses):
+    if expenses.empty or expenses.sum() == 0:
+        return "No expense categories selected."
+    total = expenses.sum()
+    top = expenses.index[0]
+    share = expenses.iloc[0] / total * 100
+    return (
+        f"**{top}** is the single biggest expense, making up {share:.0f}% of total spending "
+        f"shown here — the first place to look if you want to cut costs."
+    )
+
+
+def net_worth_insight(net_worth_df):
+    if net_worth_df.empty or len(net_worth_df) < 2:
+        return "Not enough months in the current selection to describe a trend."
+    first = net_worth_df.iloc[0]["Amount"]
+    last = net_worth_df.iloc[-1]["Amount"]
+    change = last - first
+    direction = "grown" if change >= 0 else "shrunk"
+    return (
+        f"Net worth (Safe Keep) has {direction} by **{abs(change):,.2f}** from the start to "
+        f"the end of the selected months — a simple way to check if savings are moving in "
+        f"the right direction."
+    )
