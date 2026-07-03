@@ -57,3 +57,71 @@ def test_category_breakdown():
     df = make_df().rename(columns={"Category Improved": "Category"})
     result = d.category_breakdown(df)
     assert result.loc["Salary", "Crédit"] == 4100.0
+
+
+def test_category_month_trend():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    result = d.category_month_trend(df)
+    assert set(result["Type"]) == {"Débit", "Crédit"}
+    assert set(result["Category"]) == {"Salary", "Other"}
+
+
+def test_amount_distribution_excludes_zero_amounts():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    result = d.amount_distribution(df)
+    assert (result["Amount"] > 0).all()
+    assert len(result) == 3
+
+
+def test_kpi_narrative_empty():
+    kpis = d.compute_kpis(make_df().iloc[0:0])
+    assert d.kpi_narrative(kpis) == "No transactions match the current filters."
+
+
+def test_kpi_narrative_nonempty():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    kpis = d.compute_kpis(df)
+    result = d.kpi_narrative(kpis)
+    assert "3" in result
+    assert "more money coming in than going out" in result
+
+
+def test_monthly_trend_insight():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    monthly = d.monthly_credit_debit(df)
+    result = d.monthly_trend_insight(monthly)
+    assert "grew" in result or "shrank" in result
+
+
+def test_monthly_trend_insight_insufficient_data():
+    monthly = d.monthly_credit_debit(make_df().iloc[0:0])
+    assert d.monthly_trend_insight(monthly) == "Not enough months in the current selection to describe a trend."
+
+
+def test_category_breakdown_insight():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    breakdown = d.category_breakdown(df)
+    result = d.category_breakdown_insight(breakdown)
+    assert "Other" in result
+    assert "%" in result
+
+
+def test_category_month_trend_insight():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    trend_df = d.category_month_trend(df)
+    result = d.category_month_trend_insight(trend_df)
+    assert "spending" in result
+    assert "increased" in result or "decreased" in result
+
+
+def test_amount_distribution_insight():
+    df = make_df().rename(columns={"Category Improved": "Category"})
+    dist_df = d.amount_distribution(df)
+    result = d.amount_distribution_insight(dist_df)
+    assert "median" in result
+    assert "2,100" in result
+
+
+def test_amount_distribution_insight_empty():
+    empty = pd.DataFrame({"Amount": []})
+    assert d.amount_distribution_insight(empty) == "No transaction amounts to show for the current selection."
