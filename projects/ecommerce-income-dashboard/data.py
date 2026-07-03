@@ -35,3 +35,42 @@ def income_by_gender(df):
 
 def sorted_income(df):
     return df["Annual Income"].dropna().sort_values().reset_index(drop=True)
+
+
+def kpi_narrative(kpis):
+    if kpis["customer_count"] == 0:
+        return "No customers match the current filters."
+    return (
+        f"Across **{kpis['customer_count']}** customers, the average person earns "
+        f"**${kpis['avg_income']:,.0f}** a year. Half of customers earn more than "
+        f"**${kpis['median_income']:,.0f}** and half earn less — that middle number "
+        f"(the median) is often a better sense of the 'typical' customer than the average, "
+        f"since a few very high earners can pull the average up."
+    )
+
+
+def income_by_gender_insight(income_series):
+    total = income_series.sum()
+    if income_series.empty or total == 0:
+        return "No income data available for the current selection."
+    top = income_series.index[0]
+    share = income_series.iloc[0] / total * 100
+    return (
+        f"**{top}** customers bring in {share:.0f}% of all the income shown here — that's "
+        f"simply because this group spends the most combined, not necessarily because any "
+        f"one person earns more."
+    )
+
+
+def sorted_income_insight(sorted_series):
+    if sorted_series.empty:
+        return "No income data available for the current selection."
+    lowest = sorted_series.iloc[0]
+    highest = sorted_series.iloc[-1]
+    gap_multiple = highest / lowest if lowest else float("inf")
+    return (
+        f"Reading left to right, each dot is one customer sorted from lowest to highest "
+        f"income — from **${lowest:,.0f}** up to **${highest:,.0f}**. The highest earner "
+        f"makes about **{gap_multiple:.1f}x** what the lowest earner makes, which shows how "
+        f"spread out incomes are in this group."
+    )

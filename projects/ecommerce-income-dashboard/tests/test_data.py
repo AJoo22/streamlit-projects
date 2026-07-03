@@ -77,3 +77,38 @@ def test_income_by_gender():
 def test_sorted_income():
     result = d.sorted_income(make_df())
     assert list(result) == [30000, 40000, 50000, 60000]
+
+
+def test_kpi_narrative_empty():
+    kpis = d.compute_kpis(make_df().iloc[0:0])
+    assert d.kpi_narrative(kpis) == "No customers match the current filters."
+
+
+def test_kpi_narrative_nonempty():
+    kpis = d.compute_kpis(make_df())
+    result = d.kpi_narrative(kpis)
+    assert "4" in result
+    assert "45,000" in result
+
+
+def test_income_by_gender_insight():
+    result = d.income_by_gender_insight(d.income_by_gender(make_df()))
+    assert "%" in result
+    assert "Female" in result or "Male" in result
+
+
+def test_income_by_gender_insight_empty():
+    empty = d.income_by_gender(make_df().iloc[0:0])
+    assert d.income_by_gender_insight(empty) == "No income data available for the current selection."
+
+
+def test_sorted_income_insight():
+    result = d.sorted_income_insight(d.sorted_income(make_df()))
+    assert "30,000" in result
+    assert "60,000" in result
+    assert "2.0x" in result
+
+
+def test_sorted_income_insight_empty():
+    result = d.sorted_income_insight(d.sorted_income(make_df().iloc[0:0]))
+    assert result == "No income data available for the current selection."
