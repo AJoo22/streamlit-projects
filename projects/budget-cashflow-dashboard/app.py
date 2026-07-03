@@ -15,7 +15,7 @@ def get_data():
 
 df = get_data()
 
-all_categories = d.cashflow_categories(df) + d.expense_categories(df)
+all_categories = d.cashflow_categories(df) + d.expense_categories(df) + [d.NET_WORTH_CATEGORY]
 months = sorted(df["Month"].unique())
 
 st.sidebar.header("Filters")
@@ -51,7 +51,9 @@ expenses = d.expense_breakdown(filtered)
 if expenses.empty:
     st.info("No expense categories selected.")
 else:
-    st.plotly_chart(px.bar(expenses), use_container_width=True)
+    st.plotly_chart(
+        px.bar(expenses.reset_index(), x="Category", y="Amount"), use_container_width=True
+    )
 
 st.subheader("Net Worth Trend (Safe Keep)")
 net_worth = d.net_worth_trend(filtered)
