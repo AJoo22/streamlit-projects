@@ -158,6 +158,26 @@ def test_trend_insight_insufficient_data():
     assert d.trend_insight(trend_df) == "Not enough data to describe a trend."
 
 
+def test_correlation_matrix():
+    df = make_df()
+    corr = d.correlation_matrix(df)
+    assert "Consommation (MW)" in corr.columns
+    assert "Nucléaire (MW)" in corr.index
+
+
+def test_correlation_insight():
+    df = make_df()
+    corr = d.correlation_matrix(df)
+    result = d.correlation_insight(corr)
+    assert "correlation of" in result
+    assert "strongly" in result or "moderately" in result or "weakly" in result
+
+
+def test_correlation_insight_empty():
+    empty_corr = pd.DataFrame()
+    assert d.correlation_insight(empty_corr) == "Not enough data to describe correlations."
+
+
 def test_regression_insight():
     df = make_df()
     reg_result = d.fit_regression(df)

@@ -77,6 +77,29 @@ def production_over_time(df):
     return daily
 
 
+def correlation_matrix(df):
+    feature_cols = [c for c in PRODUCTION_COLUMNS + TCO_COLUMNS if c in df.columns]
+    cols = feature_cols + ["Consommation (MW)"]
+    return df[cols].corr()
+
+
+def correlation_insight(corr_df):
+    if corr_df.empty or "Consommation (MW)" not in corr_df.columns:
+        return "Not enough data to describe correlations."
+    corr_with_consumption = corr_df["Consommation (MW)"].drop("Consommation (MW)")
+    if corr_with_consumption.empty:
+        return "Not enough data to describe correlations."
+    top = corr_with_consumption.abs().idxmax()
+    value = corr_with_consumption[top]
+    strength = "strongly" if abs(value) >= 0.7 else "moderately" if abs(value) >= 0.4 else "weakly"
+    relation = "rises" if value >= 0 else "falls"
+    return (
+        f"In plain terms: when **{top}** goes up, consumption usually {relation} too — "
+        f"the two are {strength} linked (correlation of {value:.2f}). A value near +1 means "
+        f"they move together, near -1 means they move opposite, and near 0 means no clear link."
+    )
+
+
 def fit_regression(df):
     feature_cols = [c for c in PRODUCTION_COLUMNS + TCO_COLUMNS if c in df.columns]
     data = df.dropna(subset=feature_cols + ["Consommation (MW)"])

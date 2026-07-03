@@ -64,6 +64,15 @@ fig = px.line(trend_df, x="Date", y=["Production (MW)", "Consommation (MW)"])
 st.plotly_chart(fig, use_container_width=True)
 st.markdown(d.trend_insight(trend_df))
 
+st.subheader("Correlation Heatmap")
+st.caption("How closely each production source and usage rate tracks consumption.")
+corr_df = d.correlation_matrix(filtered)
+st.plotly_chart(
+    px.imshow(corr_df, text_auto=".2f", color_continuous_scale="RdBu_r", zmin=-1, zmax=1),
+    use_container_width=True,
+)
+st.markdown(d.correlation_insight(corr_df))
+
 st.subheader("Linear Regression: Predicting Consumption")
 reg_result = d.fit_regression(filtered)
 if reg_result is None:
