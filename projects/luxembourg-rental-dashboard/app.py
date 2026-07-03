@@ -7,6 +7,10 @@ import data as d
 st.set_page_config(page_title="Luxembourg Rental Dashboard", layout="wide")
 st.title("Luxembourg Rental Listings Dashboard")
 st.caption("Public rental listing data scraped from athome.lu — no owner/tenant personal data.")
+st.markdown(
+    "In plain terms: this page shows what rent actually costs across Luxembourg, how much "
+    "space you get for that money, and where the most listings are concentrated."
+)
 
 
 @st.cache_data
@@ -37,21 +41,26 @@ col1.metric("Avg Price", f"€{kpis['avg_price']:,.0f}")
 col2.metric("Median Price", f"€{kpis['median_price']:,.0f}")
 col3.metric("Listings", kpis["listing_count"])
 col4.metric("Avg €/m²", f"€{kpis['avg_price_per_sqm']:,.1f}")
+st.markdown(d.kpi_narrative(kpis))
 
 col_a, col_b = st.columns(2)
 with col_a:
     st.subheader("Price Distribution")
     st.plotly_chart(px.histogram(filtered, x="Price", nbins=20), use_container_width=True)
+    st.markdown(d.price_distribution_insight(filtered))
 with col_b:
     st.subheader("Surface Distribution")
     st.plotly_chart(px.histogram(filtered, x="Surface", nbins=20), use_container_width=True)
+    st.markdown(d.surface_distribution_insight(filtered))
 
 st.subheader("Price vs Surface")
 st.plotly_chart(px.scatter(filtered, x="Surface", y="Price", color="Location"), use_container_width=True)
+st.markdown(d.price_vs_surface_insight(filtered))
 
 st.subheader("Listings by Location")
 location_counts = d.listings_by_location(filtered)
 st.plotly_chart(px.bar(location_counts), use_container_width=True)
+st.markdown(d.location_insight(location_counts))
 
 st.subheader("Filtered Listings")
 st.dataframe(filtered)
@@ -60,4 +69,15 @@ st.download_button(
     filtered.to_csv(index=False).encode("utf-8"),
     file_name="luxembourg_listings_filtered.csv",
     mime="text/csv",
+)
+
+st.divider()
+st.subheader("Why this matters")
+st.markdown(
+    "- **Apartment hunting:** the price and surface distributions set realistic "
+    "expectations for what a budget actually buys.\n"
+    "- **Comparing fairly:** €/m² strips out size differences so listings can be "
+    "compared apples-to-apples.\n"
+    "- **Choosing a location:** the listings-by-location chart shows where the market "
+    "is most active, which affects both choice and competition."
 )
