@@ -27,6 +27,20 @@ def test_load_data(tmp_path):
     assert df["Amount"].notna().all()
 
 
+def test_load_data_real_bundled_file():
+    # Regression test: the real shipped fichiers.csv has ragged rows
+    # (some short by one field, some with extra trailing fields beyond
+    # the header's month columns). pandas.read_csv's strict fixed-width
+    # parser used to raise ParserError on this file. load_data must
+    # tolerate that raggedness and still produce usable data.
+    repo_root = Path(__file__).resolve().parents[1]
+    df = d.load_data(str(repo_root / "data" / "fichiers.csv"))
+    assert not df.empty
+    assert list(df.columns) == ["Category", "MonthLabel", "Amount", "Month"]
+    assert pd.api.types.is_datetime64_any_dtype(df["Month"])
+    assert df["Amount"].notna().all()
+
+
 def test_filter_data(tmp_path):
     df = d.load_data(make_csv(tmp_path))
     filtered = d.filter_data(df, ["CASHFLOW_LAVORO"], "2023-01-01", "2023-01-31")

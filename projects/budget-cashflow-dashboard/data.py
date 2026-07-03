@@ -1,3 +1,5 @@
+import csv
+
 import pandas as pd
 
 FRENCH_MONTHS = {
@@ -19,8 +21,32 @@ def _parse_month_column(col):
 
 
 def load_data(path="data/fichiers.csv"):
-    df = pd.read_csv(path)
-    month_cols = [c for c in df.columns if c != "Category"]
+    # The bundled CSV export is ragged: some rows are missing a trailing
+    # value (short row) and some have extra trailing values beyond the
+    # header's month columns (long row, with no reliable way to know what
+    # months those extras represent). pandas.read_csv's fixed-width C
+    # parser raises on both cases, so we parse row-by-row instead: pad
+    # short rows with empty strings and truncate long rows to the header
+    # length.
+    with open(path, newline="", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        month_cols = header[1:]
+        n_months = len(month_cols)
+
+        records = []
+        for row in reader:
+            if not row:
+                continue
+            category = row[0]
+            values = row[1:]
+            if len(values) < n_months:
+                values = values + [""] * (n_months - len(values))
+            elif len(values) > n_months:
+                values = values[:n_months]
+            records.append([category] + values)
+
+    df = pd.DataFrame(records, columns=["Category"] + month_cols)
     long_df = df.melt(id_vars="Category", value_vars=month_cols, var_name="MonthLabel", value_name="Amount")
     long_df["Amount"] = pd.to_numeric(long_df["Amount"], errors="coerce")
     long_df = long_df.dropna(subset=["Amount"])
