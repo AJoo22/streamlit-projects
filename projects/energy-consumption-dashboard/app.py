@@ -119,16 +119,47 @@ with tab_overview:
             st.plotly_chart(fig, use_container_width=True)
             st.markdown(d.map_insight(map_df))
 
-    st.subheader("Production Mix")
-    mix_series = d.production_mix(filtered)
+    st.subheader("Production by Region and Source")
+    source_df = d.production_by_region_source(filtered)
+    region_order = (
+        source_df.groupby("Région")["Production (MW)"].sum().sort_values(ascending=False).index.tolist()
+    )
     st.plotly_chart(
-        px.pie(
-            values=mix_series.values, names=mix_series.index,
-            color=mix_series.index, color_discrete_map=SOURCE_COLORS,
+        px.bar(
+            source_df, x="Région", y="Production (MW)", color="Source", barmode="stack",
+            color_discrete_map=SOURCE_COLORS, category_orders={"Région": region_order},
         ),
         use_container_width=True,
     )
-    st.markdown(d.mix_insight(mix_series))
+    st.markdown(d.region_source_insight(source_df))
+
+    col_c, col_d = st.columns(2)
+    with col_c:
+        st.subheader("Production Mix")
+        mix_series = d.production_mix(filtered)
+        st.plotly_chart(
+            px.pie(
+                values=mix_series.values, names=mix_series.index,
+                color=mix_series.index, color_discrete_map=SOURCE_COLORS,
+            ),
+            use_container_width=True,
+        )
+        st.markdown(d.mix_insight(mix_series))
+    with col_d:
+        st.subheader("Capacity Factor by Source")
+        st.caption("Average share of maximum potential output each source actually ran at.")
+        cf_series = d.capacity_factor_mix(filtered)
+        if cf_series.empty:
+            st.info("No capacity-factor data available for the current selection.")
+        else:
+            st.plotly_chart(
+                px.pie(
+                    values=cf_series.values, names=cf_series.index,
+                    color=cf_series.index, color_discrete_map=SOURCE_COLORS,
+                ),
+                use_container_width=True,
+            )
+            st.markdown(d.capacity_factor_insight(cf_series))
 
 with tab_trends:
     st.subheader("Production & Consumption Over Time")

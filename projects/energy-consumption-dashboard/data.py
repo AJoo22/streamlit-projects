@@ -100,6 +100,50 @@ def production_mix(df):
     return mix
 
 
+def production_by_region_source(df):
+    grouped = df.groupby("Région")[PRODUCTION_COLUMNS].sum()
+    grouped.columns = [c.replace(" (MW)", "") for c in grouped.columns]
+    grouped["Total"] = grouped.sum(axis=1)
+    grouped = grouped.sort_values("Total", ascending=False).drop(columns="Total")
+    return grouped.reset_index().melt(id_vars="Région", var_name="Source", value_name="Production (MW)")
+
+
+def region_source_insight(source_df):
+    if source_df.empty:
+        return "No regional production data available for the current selection."
+    totals = source_df.groupby("Région")["Production (MW)"].sum().sort_values(ascending=False)
+    top_region = totals.index[0]
+    region_mix = source_df[source_df["Région"] == top_region].set_index("Source")["Production (MW)"]
+    dominant_source = region_mix.idxmax()
+    dominant_share = region_mix[dominant_source] / region_mix.sum() * 100 if region_mix.sum() else 0.0
+    return (
+        f"**{top_region}** produces the most overall, led by **{dominant_source}** at "
+        f"{dominant_share:.0f}% of its own mix — the source mix varies a lot by region, so "
+        f"the national picture alone can hide which regions actually depend on what."
+    )
+
+
+def capacity_factor_mix(df):
+    cols = [c for c in TCO_COLUMNS if c in df.columns]
+    if not cols or df.empty:
+        return pd.Series(dtype=float)
+    mix = df[cols].mean()
+    mix.index = [c.replace("TCO ", "").replace(" (%)", "") for c in mix.index]
+    return mix
+
+
+def capacity_factor_insight(cf_series):
+    if cf_series.empty or cf_series.sum() == 0:
+        return "No capacity-factor data available for the current selection."
+    top = cf_series.idxmax()
+    top_value = cf_series[top]
+    return (
+        f"**{top}** runs at the highest average capacity factor ({top_value:.0f}%), meaning "
+        f"it operates closest to its maximum potential output most consistently — a "
+        f"different signal than raw production volume, which mostly reflects fleet size."
+    )
+
+
 def production_over_time(df):
     daily = df.groupby(df["Date"].dt.date)[["Production (MW)", "Consommation (MW)"]].sum()
     daily.index = pd.to_datetime(daily.index)

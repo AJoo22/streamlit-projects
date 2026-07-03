@@ -80,6 +80,51 @@ def test_production_mix():
     assert "Nucléaire" in result.index
 
 
+def test_production_by_region_source():
+    df = make_df()
+    result = d.production_by_region_source(df)
+    assert set(result["Région"]) == {"Île-de-France", "Nouvelle-Aquitaine"}
+    assert set(result["Source"]) == {
+        "Thermique", "Nucléaire", "Eolien", "Solaire", "Hydraulique", "Pompage", "Bioénergies",
+    }
+    assert (result["Production (MW)"] > 0).all()
+
+
+def test_region_source_insight():
+    df = make_df()
+    source_df = d.production_by_region_source(df)
+    result = d.region_source_insight(source_df)
+    assert "Nucléaire" in result
+    assert "%" in result
+
+
+def test_region_source_insight_empty():
+    assert d.region_source_insight(pd.DataFrame()) == "No regional production data available for the current selection."
+
+
+def test_capacity_factor_mix():
+    df = make_df()
+    result = d.capacity_factor_mix(df)
+    assert result["Nucléaire"] == 50.0
+    assert result["Thermique"] == 10.0
+
+
+def test_capacity_factor_mix_empty():
+    result = d.capacity_factor_mix(make_df().iloc[0:0])
+    assert result.empty
+
+
+def test_capacity_factor_insight():
+    df = make_df()
+    result = d.capacity_factor_insight(d.capacity_factor_mix(df))
+    assert "Nucléaire" in result
+    assert "50%" in result
+
+
+def test_capacity_factor_insight_empty():
+    assert d.capacity_factor_insight(pd.Series(dtype=float)) == "No capacity-factor data available for the current selection."
+
+
 def test_regional_map_data():
     df = make_df()
     map_df = d.regional_map_data(df)
