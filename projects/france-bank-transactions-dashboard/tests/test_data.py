@@ -68,3 +68,55 @@ def test_month_of_bare_one_is_october():
 
 def test_month_of_zero_padded_one_is_january():
     assert d._month_of("5.01") == 1
+
+
+def test_monthly_credit_debit(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    result = d.monthly_credit_debit(df)
+    assert list(result["Month"]) == [7, 8]
+    assert result.loc[result["Month"] == 7, "Crédit"].iloc[0] == 2000.0
+
+
+def test_kpi_narrative_empty():
+    kpis = d.compute_kpis(pd.DataFrame({"Débit": [], "Crédit": []}))
+    assert d.kpi_narrative(kpis) == "No transactions match the current filters."
+
+
+def test_kpi_narrative_nonempty(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    kpis = d.compute_kpis(df)
+    result = d.kpi_narrative(kpis)
+    assert "3" in result
+    assert "more money coming in than going out" in result
+
+
+def test_category_breakdown_insight(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    breakdown = d.category_breakdown(df)
+    result = d.category_breakdown_insight(breakdown)
+    assert "Health" in result
+    assert "%" in result
+
+
+def test_monthly_trend_insight(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    monthly = d.monthly_credit_debit(df)
+    result = d.monthly_trend_insight(monthly)
+    assert "grew" in result or "shrank" in result
+
+
+def test_monthly_trend_insight_insufficient_data():
+    monthly = pd.DataFrame({"Month": [7], "Débit": [10.0], "Crédit": [0.0]})
+    assert d.monthly_trend_insight(monthly) == "Not enough months in the current selection to describe a trend."
+
+
+def test_largest_transactions_insight(tmp_path):
+    df = d.load_data(make_csv(tmp_path))
+    largest = d.largest_transactions(df, n=10)
+    result = d.largest_transactions_insight(largest)
+    assert "Salary" in result
+    assert "2,000.00" in result
+
+
+def test_largest_transactions_insight_empty():
+    assert d.largest_transactions_insight(pd.DataFrame()) == "No transactions to show for the current selection."
