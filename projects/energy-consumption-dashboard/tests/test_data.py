@@ -94,3 +94,84 @@ def test_fit_regression_insufficient_data():
 def test_fit_forecast_insufficient_data():
     df = make_df()
     assert d.fit_forecast(df, "Île-de-France") is None
+
+
+def test_kpi_narrative_empty():
+    kpis = d.compute_kpis(make_df().iloc[0:0])
+    assert d.kpi_narrative(kpis) == "No data available for the current selection."
+
+
+def test_kpi_narrative_nonempty():
+    df = make_df()
+    df["Production (MW)"] = df[[
+        "Thermique (MW)", "Nucléaire (MW)", "Eolien (MW)", "Solaire (MW)",
+        "Hydraulique (MW)", "Pompage (MW)", "Bioénergies (MW)",
+    ]].sum(axis=1)
+    kpis = d.compute_kpis(df)
+    narrative = d.kpi_narrative(kpis)
+    assert "Nucléaire" in narrative
+    assert "surplus" in narrative or "deficit" in narrative
+
+
+def test_region_insight_multiple_regions():
+    df = make_df()
+    result = d.region_insight(d.consumption_by_region(df))
+    assert "Nouvelle-Aquitaine" in result or "Île-de-France" in result
+    assert "%" in result
+
+
+def test_region_insight_empty():
+    empty = d.consumption_by_region(make_df().iloc[0:0])
+    assert "No regional data" in d.region_insight(empty)
+
+
+def test_mix_insight():
+    df = make_df()
+    result = d.mix_insight(d.production_mix(df))
+    assert "Nucléaire" in result
+    assert "Renewables" in result
+
+
+def test_mix_insight_empty():
+    empty = d.production_mix(make_df().iloc[0:0])
+    assert "No production data" in d.mix_insight(empty)
+
+
+def test_trend_insight():
+    df = make_df()
+    df["Production (MW)"] = df[[
+        "Thermique (MW)", "Nucléaire (MW)", "Eolien (MW)", "Solaire (MW)",
+        "Hydraulique (MW)", "Pompage (MW)", "Bioénergies (MW)",
+    ]].sum(axis=1)
+    trend_df = d.production_over_time(df)
+    result = d.trend_insight(trend_df)
+    assert "risen" in result or "fallen" in result
+
+
+def test_trend_insight_insufficient_data():
+    trend_df = d.production_over_time(make_df().iloc[0:0])
+    assert d.trend_insight(trend_df) == "Not enough data to describe a trend."
+
+
+def test_regression_insight():
+    df = make_df()
+    reg_result = d.fit_regression(df)
+    result = d.regression_insight(reg_result)
+    assert "%" in result
+    assert "MW" in result
+
+
+def test_forecast_insight():
+    forecast_result = {
+        "history": pd.DataFrame({
+            "Date": pd.date_range("2020-01-01", periods=12, freq="MS"),
+            "Consommation (MW)": [1000] * 12,
+        }),
+        "forecast": pd.DataFrame({
+            "Date": pd.date_range("2021-01-01", periods=12, freq="MS"),
+            "Forecast (MW)": [1100] * 12,
+        }),
+    }
+    result = d.forecast_insight(forecast_result)
+    assert "higher" in result
+    assert "10%" in result
