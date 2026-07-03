@@ -3,6 +3,8 @@ import pandas as pd
 
 def load_data(path="data/luxembourg_properties.csv"):
     df = pd.read_csv(path)
+    is_range = df["Price"].astype(str).str.contains("à", na=False)
+    df.loc[is_range, "Price"] = None
     df["Price"] = (
         df["Price"].astype(str)
         .str.replace("€", "", regex=False)

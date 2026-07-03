@@ -48,3 +48,22 @@ def test_listings_by_location(tmp_path):
     df = d.load_data(make_csv(tmp_path))
     result = d.listings_by_location(df)
     assert result["Luxembourg-Centre"] == 1
+
+
+def make_range_price_csv(tmp_path):
+    content = (
+        "Price,Location,Surface\n"
+        "1 200 €,Luxembourg-Centre,45 m²\n"
+        "900 €,Luxembourg-Neudorf,29 m²\n"
+        "De 970 € à 1 070 720 €,Differdange,50 m²\n"
+    )
+    path = tmp_path / "range.csv"
+    path.write_text(content)
+    return str(path)
+
+
+def test_load_data_excludes_price_range_rows(tmp_path):
+    df = d.load_data(make_range_price_csv(tmp_path))
+    assert "Differdange" not in df["Location"].tolist()
+    assert len(df) == 2
+    assert df["Price"].max() < 10000
