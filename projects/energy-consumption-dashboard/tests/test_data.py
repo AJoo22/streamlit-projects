@@ -216,7 +216,7 @@ def test_correlation_insight():
     df = make_df()
     corr = d.correlation_matrix(df)
     result = d.correlation_insight(corr)
-    assert "correlation of" in result
+    assert "r = " in result
     assert "strongly" in result or "moderately" in result or "weakly" in result
 
 

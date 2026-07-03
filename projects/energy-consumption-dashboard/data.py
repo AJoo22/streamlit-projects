@@ -131,11 +131,10 @@ def correlation_insight(corr_df):
     top = corr_with_consumption.abs().idxmax()
     value = corr_with_consumption[top]
     strength = "strongly" if abs(value) >= 0.7 else "moderately" if abs(value) >= 0.4 else "weakly"
-    relation = "rises" if value >= 0 else "falls"
+    relation = "positively" if value >= 0 else "negatively"
     return (
-        f"In plain terms: when **{top}** goes up, consumption usually {relation} too — "
-        f"the two are {strength} linked (correlation of {value:.2f}). A value near +1 means "
-        f"they move together, near -1 means they move opposite, and near 0 means no clear link."
+        f"**{top}** is the strongest correlate of consumption ({relation} correlated, "
+        f"r = {value:.2f}) — a {strength} linear relationship."
     )
 
 
