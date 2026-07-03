@@ -19,7 +19,7 @@ def compute_kpis(df):
     return {
         "avg_income": float(df["Annual Income"].mean()),
         "median_income": float(df["Annual Income"].median()),
-        "customer_count": int(len(df)),
+        "customer_count": int(df["Customer ID"].nunique()),
     }
 
 

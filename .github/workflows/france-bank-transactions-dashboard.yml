@@ -1,18 +1,17 @@
-# projects/energy-consumption-dashboard/.github/workflows/streamlit.yml
 name: Streamlit Smoke Test
 
 on:
   push:
     branches: [main]
     paths:
-      - 'projects/energy-consumption-dashboard/**'
+      - 'projects/france-bank-transactions-dashboard/**'
 
 jobs:
   smoke-test:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: projects/energy-consumption-dashboard
+        working-directory: projects/france-bank-transactions-dashboard
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

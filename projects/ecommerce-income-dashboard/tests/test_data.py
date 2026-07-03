@@ -43,6 +43,31 @@ def test_compute_kpis_nonempty():
     assert kpis["avg_income"] == 45000.0
 
 
+def test_compute_kpis_counts_unique_customers_not_rows():
+    # Duplicate rows for the same customer (e.g. repeat purchase snapshots)
+    # must not inflate the customer_count KPI.
+    df = pd.DataFrame({
+        "Customer ID": [1, 2, 3, 4, 1],
+        "Age": [25, 30, 40, 22, 26],
+        "Gender": ["Female", "Male", "Female", "Male", "Female"],
+        "Location": ["City A", "City B", "City A", "City B", "City A"],
+        "Annual Income": [40000, 60000, 50000, 30000, 44000],
+    })
+    kpis = d.compute_kpis(df)
+    assert len(df) == 5
+    assert kpis["customer_count"] == 4
+    assert kpis["avg_income"] == 44800.0
+
+
+def test_compute_kpis_customer_count_matches_real_csv_unique_customers():
+    data_path = Path(__file__).resolve().parents[1] / "data" / "E-commerce.csv"
+    df = d.load_data(str(data_path))
+    kpis = d.compute_kpis(df)
+    assert len(df) == 50
+    assert kpis["customer_count"] == 13
+    assert kpis["customer_count"] != len(df)
+
+
 def test_income_by_gender():
     result = d.income_by_gender(make_df())
     assert result["Female"] == 90000

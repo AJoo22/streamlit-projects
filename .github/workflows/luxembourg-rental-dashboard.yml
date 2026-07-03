@@ -1,4 +1,3 @@
-# projects/luxembourg-rental-dashboard/.github/workflows/streamlit.yml
 name: Streamlit Smoke Test
 
 on:
