@@ -1,7 +1,13 @@
+import os
+
 import pandas as pd
 
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-def load_data(path="data/FInance_cleaned.csv"):
+
+def load_data(path=None):
+    if path is None:
+        path = os.path.join(_DATA_DIR, "FInance_cleaned.csv")
     df = pd.read_csv(path, sep=";")
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df["Débit"] = pd.to_numeric(df["Débit"], errors="coerce").fillna(0)

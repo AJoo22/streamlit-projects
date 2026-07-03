@@ -1,4 +1,8 @@
+import os
+
 import pandas as pd
+
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 CATEGORY_RULES = [
     ("Salaire", "Salary"),
@@ -37,7 +41,9 @@ def _month_of(date_str):
     return int(month_str)
 
 
-def load_data(path="data/filtered_data_fixed.csv"):
+def load_data(path=None):
+    if path is None:
+        path = os.path.join(_DATA_DIR, "filtered_data_fixed.csv")
     df = pd.read_csv(path, sep=";")
     df = df.loc[:, ~df.columns.str.match(r"^Unnamed")]
     df["Débit"] = pd.to_numeric(df["Débit"], errors="coerce").fillna(0)

@@ -1,7 +1,13 @@
+import os
+
 import pandas as pd
 
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-def load_data(path="data/luxembourg_properties.csv"):
+
+def load_data(path=None):
+    if path is None:
+        path = os.path.join(_DATA_DIR, "luxembourg_properties.csv")
     df = pd.read_csv(path)
     is_range = df["Price"].astype(str).str.contains("à", na=False)
     df.loc[is_range, "Price"] = None

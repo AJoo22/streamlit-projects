@@ -1,7 +1,13 @@
+import os
+
 import pandas as pd
 
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-def load_data(path="data/E-commerce.csv"):
+
+def load_data(path=None):
+    if path is None:
+        path = os.path.join(_DATA_DIR, "E-commerce.csv")
     df = pd.read_csv(path)
     df["Annual Income"] = pd.to_numeric(df["Annual Income"], errors="coerce")
     df["Age"] = pd.to_numeric(df["Age"], errors="coerce")

@@ -1,8 +1,12 @@
+import os
+
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from statsmodels.tsa.statespace.sarimax import SARIMAX
+
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 PRODUCTION_COLUMNS = [
     "Thermique (MW)", "Nucléaire (MW)", "Eolien (MW)", "Solaire (MW)",
@@ -14,7 +18,9 @@ TCO_COLUMNS = [
 ]
 
 
-def load_data(path="data/eco2mix_sample.csv"):
+def load_data(path=None):
+    if path is None:
+        path = os.path.join(_DATA_DIR, "eco2mix_sample.csv")
     df = pd.read_csv(path, sep=";")
     for col in PRODUCTION_COLUMNS:
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)

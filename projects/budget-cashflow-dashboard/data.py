@@ -1,6 +1,9 @@
 import csv
+import os
 
 import pandas as pd
+
+_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 FRENCH_MONTHS = {
     "Janvier": 1, "Février": 2, "Mars": 3, "Avril": 4, "Mai": 5, "Juin": 6,
@@ -20,7 +23,9 @@ def _parse_month_column(col):
     return pd.Timestamp(year=int(year_str), month=FRENCH_MONTHS[month_str], day=1)
 
 
-def load_data(path="data/fichiers.csv"):
+def load_data(path=None):
+    if path is None:
+        path = os.path.join(_DATA_DIR, "fichiers.csv")
     # The bundled CSV export is ragged: some rows are missing a trailing
     # value (short row) and some have extra trailing values beyond the
     # header's month columns (long row, with no reliable way to know what
