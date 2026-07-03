@@ -149,7 +149,12 @@ def test_trend_insight():
 
 
 def test_trend_insight_insufficient_data():
-    trend_df = d.production_over_time(make_df().iloc[0:0])
+    df = make_df().iloc[0:0].copy()
+    df["Production (MW)"] = df[[
+        "Thermique (MW)", "Nucléaire (MW)", "Eolien (MW)", "Solaire (MW)",
+        "Hydraulique (MW)", "Pompage (MW)", "Bioénergies (MW)",
+    ]].sum(axis=1)
+    trend_df = d.production_over_time(df)
     assert d.trend_insight(trend_df) == "Not enough data to describe a trend."
 
 
