@@ -29,9 +29,12 @@ def categorize(label):
 
 def _month_of(date_str):
     parts = str(date_str).split(".")
-    if len(parts) == 2 and parts[1].isdigit():
-        return int(parts[1])
-    return None
+    if len(parts) != 2 or not parts[1].isdigit():
+        return None
+    month_str = parts[1]
+    if month_str == "1":
+        return 10  # trailing zero dropped from "10" upstream in the source data (float round-trip artifact)
+    return int(month_str)
 
 
 def load_data(path="data/filtered_data_fixed.csv"):

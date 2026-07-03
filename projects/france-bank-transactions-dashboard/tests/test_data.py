@@ -57,3 +57,14 @@ def test_largest_transactions(tmp_path):
     result = d.largest_transactions(df, n=1)
     assert len(result) == 1
     assert result.iloc[0]["Category"] == "Salary"
+
+
+def test_month_of_bare_one_is_october():
+    # Upstream source data drops the trailing zero from "10" via a float
+    # round-trip (float("31.10") == 31.1), so a bare ".1" month token means
+    # October, never January in this file's convention.
+    assert d._month_of("31.1") == 10
+
+
+def test_month_of_zero_padded_one_is_january():
+    assert d._month_of("5.01") == 1
