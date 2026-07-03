@@ -78,6 +78,53 @@ def test_production_mix():
     assert "Nucléaire" in result.index
 
 
+def test_regional_map_data():
+    df = make_df()
+    map_df = d.regional_map_data(df)
+    assert set(map_df["Région"]) == {"Île-de-France", "Nouvelle-Aquitaine"}
+    assert {"lat", "lon", "Consommation (MW)"}.issubset(map_df.columns)
+
+
+def test_regional_map_data_empty():
+    map_df = d.regional_map_data(make_df().iloc[0:0])
+    assert map_df.empty
+
+
+def test_map_insight():
+    df = make_df()
+    result = d.map_insight(d.regional_map_data(df))
+    assert "Île-de-France" in result or "Nouvelle-Aquitaine" in result
+
+
+def test_map_insight_empty():
+    assert d.map_insight(d.regional_map_data(make_df().iloc[0:0])) == "No regional data to plot on the map."
+
+
+def test_compare_models_enough_data():
+    df = make_df()
+    result = d.compare_models(df)
+    assert result is not None
+    assert set(result["Model"]) == set(d.MODEL_FACTORIES.keys())
+    assert (result["RMSE"] >= 0).all()
+    assert result["RMSE"].is_monotonic_increasing
+
+
+def test_compare_models_insufficient_data():
+    df = make_df().iloc[:5]
+    assert d.compare_models(df) is None
+
+
+def test_model_comparison_insight():
+    df = make_df()
+    comparison_df = d.compare_models(df)
+    result = d.model_comparison_insight(comparison_df)
+    assert "most accurate" in result
+
+
+def test_model_comparison_insight_none():
+    assert d.model_comparison_insight(None) == "Not enough data to compare models."
+
+
 def test_fit_regression_enough_data():
     df = make_df()
     result = d.fit_regression(df)

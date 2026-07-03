@@ -2,8 +2,10 @@ import os
 
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
+from sklearn.linear_model import Lasso, LinearRegression, Ridge
 from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.tree import DecisionTreeRegressor
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
@@ -17,6 +19,22 @@ TCO_COLUMNS = [
     "TCO Hydraulique (%)", "TCO Solaire (%)", "TCO Bioénergies (%)",
 ]
 RENEWABLE_SOURCES = ["Eolien", "Solaire", "Hydraulique", "Bioénergies"]
+# Approximate regional centroids (lat, lon), used only to place bubbles on the map.
+REGION_COORDINATES = {
+    "Île-de-France": (48.7, 2.5),
+    "Nouvelle-Aquitaine": (45.2, 0.3),
+    "Auvergne-Rhône-Alpes": (45.3, 4.0),
+}
+MODEL_FACTORIES = {
+    "Linear Regression": lambda: LinearRegression(),
+    "Ridge Regression": lambda: Ridge(alpha=1.0),
+    "Lasso Regression": lambda: Lasso(alpha=0.1),
+    "Decision Tree": lambda: DecisionTreeRegressor(random_state=0, max_depth=5),
+    "Random Forest": lambda: RandomForestRegressor(
+        random_state=0, n_estimators=100, max_depth=10, min_samples_split=5, min_samples_leaf=2
+    ),
+    "Gradient Boosting": lambda: GradientBoostingRegressor(random_state=0, n_estimators=200),
+}
 
 
 def load_data(path=None):
@@ -64,6 +82,27 @@ def consumption_by_region(df):
     return df.groupby("Région")["Consommation (MW)"].sum().sort_values(ascending=False)
 
 
+def regional_map_data(df):
+    region_series = consumption_by_region(df)
+    rows = [
+        {"Région": region, "Consommation (MW)": total, "lat": lat, "lon": lon}
+        for region, total in region_series.items()
+        for lat, lon in [REGION_COORDINATES[region]]
+        if region in REGION_COORDINATES
+    ]
+    return pd.DataFrame(rows, columns=["Région", "Consommation (MW)", "lat", "lon"])
+
+
+def map_insight(map_df):
+    if map_df.empty:
+        return "No regional data to plot on the map."
+    top = map_df.loc[map_df["Consommation (MW)"].idxmax()]
+    return (
+        f"Bubble size and color both track consumption — **{top['Région']}** is the biggest "
+        f"circle on the map, meaning it consumes the most electricity of the selected regions."
+    )
+
+
 def production_mix(df):
     mix = df[PRODUCTION_COLUMNS].sum()
     mix.index = [c.replace(" (MW)", "") for c in mix.index]
@@ -97,6 +136,42 @@ def correlation_insight(corr_df):
         f"In plain terms: when **{top}** goes up, consumption usually {relation} too — "
         f"the two are {strength} linked (correlation of {value:.2f}). A value near +1 means "
         f"they move together, near -1 means they move opposite, and near 0 means no clear link."
+    )
+
+
+def compare_models(df):
+    feature_cols = [c for c in PRODUCTION_COLUMNS if c in df.columns]
+    data = df.dropna(subset=feature_cols + ["Consommation (MW)"])
+    if len(data) < 10:
+        return None
+    X = data[feature_cols]
+    y = data["Consommation (MW)"]
+    split = max(int(len(data) * 0.8), 1)
+    X_train, X_test = X.iloc[:split], X.iloc[split:]
+    y_train, y_test = y.iloc[:split], y.iloc[split:]
+    if len(X_test) == 0:
+        X_test, y_test = X_train, y_train
+    rows = []
+    for name, factory in MODEL_FACTORIES.items():
+        model = factory()
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        rmse = float(np.sqrt(mean_squared_error(y_test, y_pred)))
+        r2 = float(r2_score(y_test, y_pred))
+        rows.append({"Model": name, "RMSE": rmse, "R2": r2})
+    return pd.DataFrame(rows).sort_values("RMSE").reset_index(drop=True)
+
+
+def model_comparison_insight(comparison_df):
+    if comparison_df is None or comparison_df.empty:
+        return "Not enough data to compare models."
+    best = comparison_df.iloc[0]
+    worst = comparison_df.iloc[-1]
+    improvement = (worst["RMSE"] - best["RMSE"]) / worst["RMSE"] * 100 if worst["RMSE"] else 0.0
+    return (
+        f"**{best['Model']}** is the most accurate here, with a typical error of "
+        f"{best['RMSE']:,.0f} MW (R²={best['R2']:.2f}) — {improvement:.0f}% less error than "
+        f"the weakest model, **{worst['Model']}**."
     )
 
 

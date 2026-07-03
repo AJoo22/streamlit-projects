@@ -53,6 +53,20 @@ region_series = d.consumption_by_region(filtered)
 st.plotly_chart(px.bar(region_series, labels={"value": "Consommation (MW)", "index": "Région"}), use_container_width=True)
 st.markdown(d.region_insight(region_series))
 
+st.subheader("Consumption by Region — Map")
+map_df = d.regional_map_data(filtered)
+if map_df.empty:
+    st.info("No regional data available for the current selection.")
+else:
+    st.plotly_chart(
+        px.scatter_geo(
+            map_df, lat="lat", lon="lon", size="Consommation (MW)", color="Consommation (MW)",
+            hover_name="Région", scope="europe", color_continuous_scale="Reds",
+        ).update_geos(center={"lat": 46.5, "lon": 2.5}, projection_scale=5, showcountries=True),
+        use_container_width=True,
+    )
+    st.markdown(d.map_insight(map_df))
+
 st.subheader("Production Mix")
 mix_series = d.production_mix(filtered)
 st.plotly_chart(px.pie(values=mix_series.values, names=mix_series.index), use_container_width=True)
@@ -84,6 +98,25 @@ else:
     scatter_df = pd.DataFrame({"Actual": reg_result["y_test"], "Predicted": reg_result["y_pred"]})
     st.plotly_chart(px.scatter(scatter_df, x="Actual", y="Predicted"), use_container_width=True)
     st.markdown(d.regression_insight(reg_result))
+
+st.subheader("Model Comparison")
+st.caption(
+    "Tests 6 machine learning models side by side to see which one predicts consumption "
+    "most accurately from the production mix alone. Trains on the full selection, so it "
+    "can take a moment on a large date range."
+)
+if st.button("Run model comparison"):
+    with st.spinner("Training 6 models..."):
+        comparison_df = d.compare_models(filtered)
+    if comparison_df is None:
+        st.info("Not enough data in the current filter selection to compare models.")
+    else:
+        st.plotly_chart(
+            px.bar(comparison_df, x="Model", y="RMSE", color="R2", color_continuous_scale="Blues_r"),
+            use_container_width=True,
+        )
+        st.dataframe(comparison_df, use_container_width=True)
+        st.markdown(d.model_comparison_insight(comparison_df))
 
 st.subheader("SARIMAX Forecast")
 forecast_region = st.selectbox("Region to forecast", selected_regions)
