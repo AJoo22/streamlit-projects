@@ -6,10 +6,13 @@ import data as d
 
 st.set_page_config(page_title="Luxembourg Rental Dashboard", layout="wide")
 st.title("Luxembourg Rental Listings Dashboard")
-st.caption("Public rental listing data scraped from athome.lu — no owner/tenant personal data.")
+st.caption(
+    "Public rental listing data scraped from athome.lu — no owner/tenant personal data. "
+    "Covers the ≤€1,200/month segment only (the scraper's search filter), not the full market."
+)
 st.markdown(
-    "In plain terms: this page shows what rent actually costs across Luxembourg, how much "
-    "space you get for that money, and where the most listings are concentrated."
+    "Price and surface distributions, a price-vs-surface correlation, and listing "
+    "concentration by location — for the budget end of the Luxembourg rental market."
 )
 
 
