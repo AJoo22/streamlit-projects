@@ -54,9 +54,46 @@ def kpi_narrative(kpis):
     if kpis["listing_count"] == 0:
         return "No listings match the current filters."
     return (
-        f"In plain terms: among **{kpis['listing_count']}** listings, the typical (median) "
-        f"rent is **€{kpis['median_price']:,.0f}**, working out to about "
+        f"Among **{kpis['listing_count']}** listings, the typical (median) rent is "
+        f"**€{kpis['median_price']:,.0f}**, working out to about "
         f"**€{kpis['avg_price_per_sqm']:,.1f} per m²** on average."
+    )
+
+
+MIN_LISTINGS_FOR_VALUE_RANKING = 10
+
+
+def value_by_location(df, min_listings=MIN_LISTINGS_FOR_VALUE_RANKING):
+    if df.empty:
+        return pd.DataFrame(columns=["Location", "listings", "avg_price_per_sqm", "avg_price"])
+    working = df.assign(price_per_sqm=df["Price"] / df["Surface"])
+    grouped = working.groupby("Location").agg(
+        listings=("Price", "size"),
+        avg_price_per_sqm=("price_per_sqm", "mean"),
+        avg_price=("Price", "mean"),
+    )
+    grouped = grouped[grouped["listings"] >= min_listings]
+    return grouped.sort_values("avg_price_per_sqm").reset_index()
+
+
+def value_insight(value_df):
+    if value_df.empty:
+        return (
+            f"No location has at least {MIN_LISTINGS_FOR_VALUE_RANKING} listings in the current "
+            f"selection, so value-for-money can't be reliably compared yet."
+        )
+    cheapest = value_df.iloc[0]
+    priciest = value_df.iloc[-1]
+    multiple = (
+        priciest["avg_price_per_sqm"] / cheapest["avg_price_per_sqm"]
+        if cheapest["avg_price_per_sqm"] else float("inf")
+    )
+    return (
+        f"**{cheapest['Location']}** stretches a budget furthest at **€{cheapest['avg_price_per_sqm']:,.1f}/m²** "
+        f"on average, while **{priciest['Location']}** costs **{multiple:.1f}x** more per m² at "
+        f"**€{priciest['avg_price_per_sqm']:,.1f}/m²** for comparable space. Only locations with at "
+        f"least {MIN_LISTINGS_FOR_VALUE_RANKING} listings are shown, so this isn't skewed by a "
+        f"handful of outlier ads."
     )
 
 

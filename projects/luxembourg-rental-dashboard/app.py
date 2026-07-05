@@ -1,6 +1,7 @@
 # projects/luxembourg-rental-dashboard/app.py
 import streamlit as st
 import plotly.express as px
+import pandas as pd
 
 import data as d
 
@@ -11,8 +12,9 @@ st.caption(
     "Covers the full advertised rental market, not a price-limited segment."
 )
 st.markdown(
-    "Price and surface distributions, a price-vs-surface correlation, and listing "
-    "concentration by location across the Luxembourg rental market."
+    "Price and surface distributions, a price-vs-surface correlation, listing "
+    "concentration by location, and — the practical question — **where a rent budget "
+    "actually stretches furthest**, ranked by average €/m² across the market."
 )
 
 
@@ -65,6 +67,27 @@ location_counts = d.listings_by_location(filtered)
 st.plotly_chart(px.bar(location_counts), use_container_width=True)
 st.markdown(d.location_insight(location_counts))
 
+st.divider()
+st.subheader("Where Does Your Rent Go Furthest?")
+st.caption(
+    f"Ranks locations by average €/m², limited to those with at least "
+    f"{d.MIN_LISTINGS_FOR_VALUE_RANKING} listings so a handful of outlier ads can't skew it."
+)
+value_df = d.value_by_location(filtered)
+if value_df.empty:
+    st.info(d.value_insight(value_df))
+else:
+    extremes = pd.concat([value_df.head(10), value_df.tail(10)]).drop_duplicates(subset="Location")
+    st.plotly_chart(
+        px.bar(
+            extremes, x="Location", y="avg_price_per_sqm",
+            labels={"avg_price_per_sqm": "Avg €/m²"},
+            color="avg_price_per_sqm", color_continuous_scale="RdYlGn_r",
+        ),
+        use_container_width=True,
+    )
+    st.markdown(d.value_insight(value_df))
+
 st.subheader("Filtered Listings")
 st.dataframe(filtered)
 st.download_button(
@@ -74,13 +97,3 @@ st.download_button(
     mime="text/csv",
 )
 
-st.divider()
-st.subheader("Why this matters")
-st.markdown(
-    "- **Apartment hunting:** the price and surface distributions set realistic "
-    "expectations for what a budget actually buys.\n"
-    "- **Comparing fairly:** €/m² strips out size differences so listings can be "
-    "compared apples-to-apples.\n"
-    "- **Choosing a location:** the listings-by-location chart shows where the market "
-    "is most active, which affects both choice and competition."
-)

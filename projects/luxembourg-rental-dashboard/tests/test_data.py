@@ -126,3 +126,47 @@ def test_location_insight(tmp_path):
 
 def test_location_insight_empty():
     assert d.location_insight(pd.Series(dtype=int)) == "No location data available for the current selection."
+
+
+def make_value_df():
+    rows = []
+    for i in range(12):
+        rows.append({"Price": 500.0 + i, "Surface": 50.0, "Location": "CheapTown"})
+    for i in range(15):
+        rows.append({"Price": 3000.0 + i, "Surface": 50.0, "Location": "PriceyTown"})
+    for i in range(5):
+        rows.append({"Price": 100000.0, "Surface": 10.0, "Location": "TinyTown"})
+    return pd.DataFrame(rows)
+
+
+def test_value_by_location_excludes_small_samples():
+    df = make_value_df()
+    result = d.value_by_location(df, min_listings=10)
+    assert set(result["Location"]) == {"CheapTown", "PriceyTown"}
+
+
+def test_value_by_location_sorted_ascending():
+    df = make_value_df()
+    result = d.value_by_location(df, min_listings=10)
+    assert result.iloc[0]["Location"] == "CheapTown"
+    assert result.iloc[-1]["Location"] == "PriceyTown"
+
+
+def test_value_by_location_empty():
+    result = d.value_by_location(pd.DataFrame(columns=["Price", "Surface", "Location"]))
+    assert result.empty
+
+
+def test_value_insight():
+    df = make_value_df()
+    value_df = d.value_by_location(df, min_listings=10)
+    result = d.value_insight(value_df)
+    assert "CheapTown" in result
+    assert "PriceyTown" in result
+    assert "x" in result
+
+
+def test_value_insight_no_qualifying_locations():
+    empty = pd.DataFrame(columns=["Location", "listings", "avg_price_per_sqm", "avg_price"])
+    result = d.value_insight(empty)
+    assert "at least" in result
