@@ -1,116 +1,825 @@
 Price,Location,Surface
+2 650 €,Strassen,86 m²
+2 750 €,Strassen,86 m²
+2 200 €,Strassen,48 m²
+1 800 €,Bertrange,55 m²
+5 400 €,Bertrange,181 m²
+3 620 €,Luxembourg-Belair,103 m²
+1 900 €,Luxembourg-Cessange,36 m²
+2 000 €,Contern,63 m²
+3 200 €,Luxembourg-Gare,141 m²
+2 600 €,Lorentzweiler,77 m²
+2 100 €,Lorentzweiler,77 m²
+2 500 €,Mensdorf,135 m²
+2 400 €,Contern,80 m²
+2 300 €,Contern,63 m²
+1 900 €,Lorentzweiler,54 m²
+2 450 €,Luxembourg-Hollerich,70 m²
+3 500 €,Luxembourg-Kirchberg,81 m²
+1 700 €,Dudelange,58 m²
+1 650 €,Luxembourg-Belair,30 m²
 620 €,Oberkorn,15 m²
-620 €,Differdange,10 m²
+620 €,Oberkorn,15 m²
 600 €,Differdange,N/A
 600 €,Differdange,12 m²
+2 200 €,Luxembourg-Eich,63 m²
+1 750 €,Esch-sur-Alzette,70 m²
+1 550 €,Luxembourg-Neudorf,52 m²
+1 700 €,Eischen,74 m²
+1 500 €,Schifflange,57 m²
 950 €,Esch-sur-Alzette,13 m²
+3 600 €,Contern,150 m²
+2 150 €,Bertrange,52 m²
+2 050 €,Leudelange,83 m²
+2 600 €,Luxembourg-Gare,99 m²
+3 600 €,Moutfort,150 m²
+2 700 €,Luxembourg-Kirchberg,54 m²
+1 750 €,Hunsdorf,87 m²
+2 600 €,Keispelt,103 m²
+1 500 €,Hobscheid,55 m²
+3 200 €,Luxembourg-Centre ville,95 m²
+3 200 €,Luxembourg-Centre ville,95 m²
+3 200 €,Luxembourg-Centre ville,95 m²
+1 785 €,Keispelt,97 m²
+2 000 €,Boevange-sur-Attert,101 m²
+2 000 €,Lintgen,95 m²
+2 380 €,Luxembourg-Gasperich - Cloche d'or,100 m²
+2 000 €,Luxembourg-Bonnevoie,45 m²
+3 300 €,Luxembourg-Kirchberg,80 m²
+2 400 €,Luxembourg-Kirchberg,55 m²
+2 400 €,Luxembourg-Kirchberg,54 m²
+3 200 €,Luxembourg-Kirchberg,80 m²
+2 200 €,Luxembourg-Kirchberg,54 m²
+3 100 €,Luxembourg-Kirchberg,80 m²
+2 300 €,Luxembourg-Kirchberg,54 m²
+3 950 €,Bertrange,126 m²
+2 150 €,Luxembourg-Limpertsberg,45 m²
+2 250 €,Luxembourg-Muhlenbach,58 m²
+1 980 €,Luxembourg-Beggen,90 m²
+1 550 €,Luxembourg-Belair,22 m²
+1 550 €,Luxembourg-Centre ville,22 m²
+2 000 €,Luxembourg-Centre ville,55 m²
+2 300 €,Walferdange,57 m²
+1 750 €,Luxembourg-Kirchberg,45 m²
+1 950 €,Heisdorf,58 m²
+2 000 €,Luxembourg-Centre ville,55 m²
+2 150 €,Bereldange,61 m²
+2 800 €,Luxembourg-Limpertsberg,94 m²
+3 260 €,Alzingen,185 m²
+1 450 €,Luxembourg-Bonnevoie,N/A
+1 800 €,Strassen,48 m²
+1 250 €,Weiswampach,61 m²
+1 600 €,Larochette,108 m²
+5 500 €,Luxembourg-Limpertsberg,266 m²
+1 900 €,Luxembourg-Muhlenbach,35 m²
+2 150 €,Luxembourg-Kirchberg,60 m²
+1 850 €,Luxembourg-Limpertsberg,35 m²
+1 550 €,Luxembourg-Limpertsberg,30 m²
+1 950 €,Luxembourg-Limpertsberg,35 m²
 1 150 €,Luxembourg-Merl,15 m²
+1 700 €,Luxembourg-Gare,48 m²
+1 350 €,Bridel,37 m²
 1 200 €,Hesperange,26 m²
-1 050 €,Luxembourg-Limpertsberg,15 m²
-1 000 €,Luxembourg-Cessange,14 m²
-1 200 €,Luxembourg-Gasperich - Cloche d'or,18 m²
-1 200 €,Luxembourg-Centre ville,120 m²
-1 200 €,Luxembourg-Gasperich - Cloche d'or,18 m²
-1 200 €,Luxembourg-Limpertsberg,16 m²
+1 950 €,Bertrange,43 m²
+1 900 €,Luxembourg-Centre ville,52 m²
+1 800 €,Luxembourg-Centre ville,31 m²
+2 800 €,Luxembourg-Centre ville,90 m²
+5 000 €,Luxembourg-Kirchberg,280 m²
+1 700 €,Luxembourg-Bonnevoie,60 m²
+2 300 €,Luxembourg-Limpertsberg,45 m²
+2 900 €,Luxembourg-Merl,85 m²
+1 750 €,Luxembourg-Centre ville,31 m²
+2 950 €,Mamer,133 m²
+2 300 €,Luxembourg-Limpertsberg,95 m²
+1 750 €,Heisdorf,52 m²
+2 650 €,Luxembourg-Cents,95 m²
+2 100 €,Luxembourg-Dommeldange,89 m²
+1 750 €,Luxembourg-Belair,55 m²
+1 500 €,Lallange,60 m²
+2 200 €,Esch-sur-Alzette,77 m²
+1 900 €,Luxembourg-Belair,66 m²
+1 600 €,Lallange,61 m²
+1 600 €,Lallange,61 m²
+1 500 €,Esch-sur-Alzette,42 m²
+1 600 €,Lallange,61 m²
+1 550 €,Lallange,47 m²
+1 650 €,Lallange,68 m²
+1 550 €,Schifflange,48 m²
+2 950 €,Luxembourg-Rollingergrund,90 m²
+1 450 €,Kayl,35 m²
+2 100 €,Luxembourg-Centre ville,45 m²
+1 550 €,Alzingen,24 m²
+1 700 €,Alzingen,32 m²
+1 650 €,Alzingen,29 m²
+1 550 €,Alzingen,25 m²
+1 600 €,Alzingen,27 m²
+1 700 €,Alzingen,32 m²
+1 550 €,Alzingen,26 m²
+1 600 €,Alzingen,27 m²
+1 700 €,Alzingen,33 m²
+1 650 €,Alzingen,28 m²
+1 600 €,Alzingen,27 m²
+1 650 €,Alzingen,28 m²
+4 000 €,Mamer,235 m²
+4 290 €,Lorentzweiler,183 m²
+2 490 €,Lorentzweiler,87 m²
+2 200 €,Luxembourg-Gasperich - Cloche d'or,70 m²
+3 750 €,Luxembourg-Limpertsberg,110 m²
+1 650 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+2 050 €,Luxembourg-Limpertsberg,50 m²
+1 650 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+2 150 €,Luxembourg-Kirchberg,45 m²
+2 720 €,Luxembourg-Kirchberg,60 m²
+2 150 €,Luxembourg-Gasperich - Cloche d'or,60 m²
+1 950 €,Strassen,60 m²
+1 975 €,Luxembourg-Gasperich - Cloche d'or,50 m²
+1 750 €,Luxembourg-Gasperich - Cloche d'or,40 m²
+1 650 €,Luxembourg-Gasperich - Cloche d'or,40 m²
+3 750 €,Luxembourg-Limpertsberg,110 m²
+1 750 €,Luxembourg-Gasperich - Cloche d'or,50 m²
+3 300 €,Luxembourg-Kirchberg,90 m²
+2 400 €,Luxembourg-Limpertsberg,80 m²
+3 750 €,Luxembourg-Limpertsberg,110 m²
+1 750 €,Luxembourg-Gasperich - Cloche d'or,50 m²
+3 300 €,Luxembourg-Kirchberg,90 m²
+2 400 €,Luxembourg-Limpertsberg,80 m²
+3 300 €,Luxembourg-Kirchberg,90 m²
+2 150 €,Luxembourg-Kirchberg,60 m²
+5 500 €,Luxembourg-Limpertsberg,266 m²
+1 800 €,Esch-sur-Alzette,64 m²
+1 800 €,Luxembourg-Kirchberg,43 m²
+2 600 €,Luxembourg-Neudorf,110 m²
+1 800 €,Contern,75 m²
+2 650 €,Luxembourg-Cents,90 m²
+2 850 €,Itzig,105 m²
+2 600 €,Luxembourg-Gasperich - Cloche d'or,100 m²
+3 350 €,Mamer,135 m²
+2 500 €,Luxembourg-Cessange,96 m²
+3 200 €,Luxembourg-Belair,N/A
+1 900 €,Luxembourg-Limpertsberg,N/A
+1 800 €,Luxembourg-Cessange,N/A
+3 300 €,Luxembourg-Belair,N/A
+1 900 €,Luxembourg-Bonnevoie,64 m²
+1 450 €,Belvaux,46 m²
+2 600 €,Capellen,91 m²
+1 750 €,Luxembourg-Limpertsberg,30 m²
+1 750 €,Luxembourg-Limpertsberg,30 m²
+2 250 €,Dudelange,100 m²
+2 350 €,Dudelange,104 m²
+5 300 €,Luxembourg-Dommeldange,77 m²
+3 900 €,Luxembourg-Centre ville,98 m²
+1 900 €,Luxembourg-Beggen,78 m²
+1 590 €,Dippach,66 m²
+1 800 €,Bridel,48 m²
+2 700 €,Luxembourg-Merl,127 m²
+2 500 €,Luxembourg-Muhlenbach,115 m²
+1 700 €,Pétange,52 m²
+1 800 €,Luxembourg-Hollerich,33 m²
+3 900 €,Luxembourg-Limpertsberg,95 m²
+3 900 €,Luxembourg-Gasperich - Cloche d'or,98 m²
+2 195 €,Luxembourg-Clausen,30 m²
+2 200 €,Luxembourg-Belair,53 m²
+2 450 €,Luxembourg-Belair,50 m²
+1 650 €,Luxembourg-Limpertsberg,30 m²
+1 650 €,Luxembourg-Centre Ville,40 m²
+2 250 €,Luxembourg-Centre Ville,70 m²
+1 650 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+2 200 €,Luxembourg-Belair,70 m²
+1 660 €,Bertrange,40 m²
+1 600 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+1 600 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+2 550 €,Luxembourg-Centre Ville,60 m²
 1 000 €,Bereldange,12 m²
+3 500 €,Luxembourg-Belair,90 m²
+1 200 €,Luxembourg-Gasperich - Cloche d'or,18 m²
+1 700 €,Luxembourg-Kirchberg,65 m²
+1 650 €,Luxembourg-Limpertsberg,40 m²
+2 620 €,Strassen,90 m²
+1 200 €,Luxembourg-Centre ville,120 m²
+1 250 €,Luxembourg-Limpertsberg,25 m²
+2 600 €,Luxembourg-Belair,60 m²
+1 200 €,Luxembourg-Gasperich - Cloche d'or,18 m²
+1 650 €,Luxembourg-Limpertsberg,40 m²
+2 200 €,Luxembourg-Belair,70 m²
+1 660 €,Bertrange,40 m²
+1 600 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+1 600 €,Luxembourg-Gasperich - Cloche d'or,45 m²
+1 650 €,Luxembourg-Centre Ville,40 m²
+2 250 €,Luxembourg-Centre Ville,70 m²
+1 650 €,Luxembourg-Limpertsberg,30 m²
+2 550 €,Luxembourg-Centre Ville,60 m²
+1 200 €,Luxembourg-Centre ville,120 m²
+1 250 €,Luxembourg-Limpertsberg,25 m²
+1 650 €,Luxembourg-Gasperich - Cloche d'or,50 m²
+2 450 €,Luxembourg-Belair,50 m²
+2 800 €,Luxembourg-Kirchberg,90 m²
+1 650 €,Luxembourg-Centre ville,30 m²
+3 300 €,Luxembourg-Kirchberg,90 m²
+5 670 €,Luxembourg-Belair,200 m²
+1 200 €,Luxembourg-Limpertsberg,16 m²
+1 980 €,Luxembourg-Limpertsberg,50 m²
+2 660 €,Luxembourg-Merl,90 m²
+5 300 €,Luxembourg-Centre ville,200 m²
+1 900 €,Luxembourg-Belair,45 m²
+2 450 €,Luxembourg-Belair,50 m²
 1 100 €,Luxembourg-Centre ville,20 m²
+2 000 €,Luxembourg-Belair,60 m²
+2 400 €,Luxembourg-Limpertsberg,70 m²
+2 400 €,Luxembourg-Belair,70 m²
 1 200 €,Luxembourg-Limpertsberg,25 m²
+2 450 €,Luxembourg-Dommeldange,110 m²
+2 450 €,Luxembourg-Centre Ville,75 m²
+2 620 €,Strassen,90 m²
+1 050 €,Luxembourg-Limpertsberg,15 m²
+1 650 €,Luxembourg-Centre ville,45 m²
+2 550 €,Luxembourg-Eich,83 m²
+5 200 €,Luxembourg-Gasperich - Cloche d'or,251 m²
+2 300 €,Luxembourg-Dommeldange,77 m²
+1 400 €,Esch-sur-Alzette,38 m²
+3 900 €,Bertrange,118 m²
+3 900 €,Bertrange,129 m²
+6 600 €,Bertrange,207 m²
+6 700 €,Bertrange,209 m²
+6 500 €,Bertrange,206 m²
+3 900 €,Bertrange,129 m²
+1 450 €,Esch-sur-Alzette,34 m²
+1 600 €,Esch-sur-Alzette,64 m²
+1 550 €,Esch-sur-Alzette,47 m²
+1 500 €,Esch-sur-Alzette,40 m²
+1 650 €,Esch-sur-Alzette,66 m²
+2 200 €,Esch-sur-Alzette,94 m²
+2 250 €,Dudelange,95 m²
+2 600 €,Luxembourg-Belair,90 m²
+2 300 €,Luxembourg-Centre Ville,85 m²
+1 800 €,Luxembourg-Gasperich - Cloche d'or,40 m²
+1 900 €,Luxembourg-Clausen,30 m²
+2 080 €,Kayl,63 m²
+1 700 €,Luxembourg-Kirchberg,25 m²
 1 200 €,Luxembourg-Limpertsberg,20 m²
+1 700 €,Luxembourg-Kirchberg,25 m²
+1 700 €,Luxembourg-Kirchberg,25 m²
+2 600 €,Luxembourg-Gare,80 m²
+2 300 €,Luxembourg-Centre Ville,90 m²
 1 000 €,Luxembourg-Belair,15 m²
+2 200 €,Strassen,90 m²
+2 150 €,Luxembourg-Belair,90 m²
 1 000 €,Luxembourg-Belair,16 m²
+2 400 €,Luxembourg-Kirchberg,80 m²
 1 200 €,Luxembourg-Centre Ville,30 m²
+1 650 €,Strassen,35 m²
 1 200 €,Luxembourg-Rollingergrund,18 m²
+1 300 €,Luxembourg-Belair,35 m²
 1 150 €,Bereldange,18 m²
+1 250 €,Luxembourg-Centre ville,20 m²
 1 200 €,Luxembourg-Centre ville,14 m²
+3 000 €,Luxembourg-Centre ville,70 m²
 1 050 €,Luxembourg-Centre ville,15 m²
+2 400 €,Luxembourg-Centre ville,70 m²
+5 000 €,Luxembourg-Centre ville,230 m²
 1 200 €,Luxembourg-Limpertsberg,20 m²
-1 200 €,Luxembourg-Belair,18 m²
-1 200 €,Luxembourg-Belair,20 m²
-1 000 €,Luxembourg-Centre ville,14 m²
+2 700 €,Luxembourg-Belair,90 m²
+1 300 €,Luxembourg-Belair,18 m²
 1 200 €,Luxembourg-Centre Ville,18 m²
+2 500 €,Luxembourg-Centre ville,90 m²
+1 350 €,Luxembourg-Centre Ville,20 m²
+1 850 €,Luxembourg-Belair,70 m²
+1 600 €,Luxembourg-Centre Ville,35 m²
 1 200 €,Luxembourg-Belair,20 m²
+1 600 €,Luxembourg-Centre ville,45 m²
+1 200 €,Luxembourg-Centre ville,18 m²
+1 000 €,Luxembourg-Cessange,12 m²
+1 100 €,Luxembourg-Belair,15 m²
+1 650 €,Luxembourg-Limpertsberg,40 m²
+1 500 €,Luxembourg-Centre ville,45 m²
 1 150 €,Luxembourg-Belair,18 m²
-1 000 €,Luxembourg-Centre Ville,16 m²
-1 150 €,Luxembourg-Centre ville,15 m²
-1 050 €,Bereldange,15 m²
-1 150 €,Luxembourg-Belair,17 m²
-1 200 €,Luxembourg-Centre Ville,17 m²
-1 200 €,Luxembourg-Centre Ville,18 m²
-1 150 €,Luxembourg-Belair,17 m²
+1 300 €,Luxembourg-Centre Ville,20 m²
+950 €,Luxembourg-Centre Ville,11 m²
+1 700 €,Luxembourg-Kirchberg,25 m²
+1 300 €,Luxembourg-Belair,30 m²
+950 €,Luxembourg-Centre Ville,12 m²
+1 600 €,Luxembourg-Centre Ville,40 m²
+1 300 €,Luxembourg-Centre Ville,40 m²
+1 300 €,Luxembourg-Merl,18 m²
 900 €,Esch-sur-Alzette,14 m²
 1 200 €,Luxembourg-Centre ville,30 m²
-1 200 €,Luxembourg-Gasperich - Cloche d'or,20 m²
-1 100 €,Luxembourg-Centre Ville,18 m²
-1 000 €,Luxembourg-Belair,15 m²
-1 200 €,Luxembourg-Centre Ville,30 m²
-1 000 €,Luxembourg-Centre Ville,16 m²
-1 150 €,Luxembourg-Centre ville,15 m²
-1 200 €,Luxembourg-Rollingergrund,18 m²
-1 150 €,Bereldange,18 m²
-1 050 €,Bereldange,15 m²
-1 200 €,Luxembourg-Centre ville,14 m²
-1 050 €,Luxembourg-Centre ville,15 m²
-1 200 €,Luxembourg-Limpertsberg,20 m²
+1 300 €,Luxembourg-Belair,30 m²
+2 700 €,Luxembourg-Belair,90 m²
 1 200 €,Luxembourg-Belair,18 m²
+1 250 €,Luxembourg-Centre ville,18 m²
+1 800 €,Luxembourg-Centre Ville,60 m²
+1 300 €,Luxembourg-Belair,20 m²
+1 300 €,Luxembourg-Belair,30 m²
+1 250 €,Luxembourg-Centre ville,25 m²
+1 150 €,Luxembourg-Centre ville,25 m²
 1 200 €,Luxembourg-Belair,20 m²
-1 200 €,Luxembourg-Centre Ville,16 m²
+1 650 €,Luxembourg-Centre Ville,40 m²
+1 900 €,Luxembourg-Centre Ville,65 m²
+1 000 €,Luxembourg-Centre ville,12 m²
+1 300 €,Luxembourg-Belair,30 m²
+1 000 €,Luxembourg-Centre ville,18 m²
+1 150 €,Luxembourg-Centre ville,18 m²
+1 000 €,Luxembourg-Centre ville,14 m²
+1 900 €,Luxembourg-Kirchberg,60 m²
+1 600 €,Luxembourg-Centre ville,40 m²
+1 850 €,Luxembourg-Belair,70 m²
+1 200 €,Luxembourg-Centre Ville,18 m²
+1 200 €,Luxembourg-Belair,20 m²
+1 600 €,Luxembourg-Centre ville,45 m²
 1 200 €,Luxembourg-Limpertsberg,25 m²
+2 400 €,Luxembourg-Kirchberg,80 m²
+2 350 €,Luxembourg-Centre ville,70 m²
+3 200 €,Luxembourg-Belair,130 m²
 1 150 €,Luxembourg-Centre ville,20 m²
 1 000 €,Luxembourg-Centre ville,15 m²
+2 400 €,Luxembourg-Kirchberg,80 m²
+1 200 €,Luxembourg-Centre Ville,30 m²
+1 250 €,Bereldange,25 m²
+1 650 €,Strassen,35 m²
+1 200 €,Luxembourg-Rollingergrund,18 m²
+1 300 €,Luxembourg-Belair,35 m²
+1 150 €,Bereldange,18 m²
+1 250 €,Luxembourg-Centre ville,20 m²
+1 050 €,Luxembourg-Centre ville,15 m²
+2 400 €,Luxembourg-Centre ville,70 m²
+5 000 €,Luxembourg-Centre ville,230 m²
+1 200 €,Luxembourg-Limpertsberg,20 m²
+2 700 €,Luxembourg-Belair,90 m²
+1 150 €,Luxembourg-Belair,17 m²
+1 250 €,Luxembourg-Centre Ville,20 m²
+2 500 €,Luxembourg-Centre ville,90 m²
+1 350 €,Luxembourg-Centre Ville,20 m²
+2 400 €,Luxembourg-Centre Ville,75 m²
+1 650 €,Luxembourg-Centre Ville,35 m²
+1 600 €,Luxembourg-Centre Ville,35 m²
+1 300 €,Luxembourg-Belair,18 m²
+1 600 €,Luxembourg-Gare,40 m²
+6 500 €,Bertrange,195 m²
+1 250 €,Grevenmacher,43 m²
+1 790 €,Bertrange,53 m²
+3 000 €,Frisange,160 m²
+3 500 €,Capellen,140 m²
+2 400 €,Luxembourg-Bonnevoie,N/A
+1 900 €,Tuntange,125 m²
+1 800 €,Belval,53 m²
+3 200 €,Esch-sur-Alzette,244 m²
+1 550 €,Aspelt,63 m²
+2 150 €,Luxembourg-Limpertsberg,47 m²
+5 500 €,Luxembourg-Limpertsberg,253 m²
 1 200 €,Luxembourg-Limpertsberg,140 m²
 950 €,Luxembourg-Bonnevoie,14 m²
 1 200 €,Luxembourg-Belair,220 m²
 1 000 €,Luxembourg-Belair,17 m²
+1 250 €,Luxembourg-Centre Ville,30 m²
+1 600 €,Luxembourg-Centre ville,45 m²
 950 €,Luxembourg-Centre Ville,12 m²
+1 800 €,Luxembourg-Centre Ville,75 m²
 1 200 €,Luxembourg-Belair,12 m²
+1 500 €,Luxembourg-Belair,30 m²
+1 650 €,Luxembourg-Centre Ville,40 m²
+1 800 €,Limpach,70 m²
+2 100 €,Remich,100 m²
+1 500 €,Differdange,53 m²
+1 500 €,Esch-sur-Alzette,71 m²
+3 000 €,Strassen,86 m²
+1 350 €,Differdange,32 m²
+3 900 €,Luxembourg-Merl,126 m²
+1 600 €,Niederkorn,60 m²
+2 100 €,Rodange,106 m²
+1 500 €,Pétange,42 m²
+1 500 €,Pétange,53 m²
+1 800 €,Bereldange,60 m²
+1 900 €,Luxembourg-Gasperich - Cloche d'or,61 m²
+2 200 €,Bereldange,75 m²
+2 950 €,Luxembourg-Belair,95 m²
+3 000 €,Hesperange,112 m²
+2 750 €,Luxembourg-Kirchberg,67 m²
+3 400 €,Luxembourg-Bonnevoie,150 m²
+1 500 €,Belval,52 m²
+2 100 €,Luxembourg-Belair,90 m²
+1 850 €,Luxembourg-Cents,66 m²
+2 250 €,Mamer,79 m²
+2 200 €,Luxembourg-Centre ville,94 m²
+2 350 €,Luxembourg-Dommeldange,97 m²
 950 €,Belvaux,N/A
+2 500 €,Luxembourg-Belair,89 m²
+2 400 €,Luxembourg-Belair,60 m²
+1 750 €,Walferdange,45 m²
+2 400 €,Remich,65 m²
+1 700 €,Luxembourg-Hollerich,39 m²
+2 300 €,Luxembourg-Kirchberg,51 m²
+1 900 €,Goeblange,104 m²
+1 750 €,Steinfort,77 m²
+1 850 €,Ettelbruck,96 m²
+1 500 €,Niederkorn,60 m²
+1 700 €,Moutfort,55 m²
+2 000 €,Luxembourg-Belair,75 m²
+2 800 €,Luxembourg-Centre ville,80 m²
+1 700 €,Esch-sur-Alzette,51 m²
+2 450 €,Luxembourg-Hollerich,84 m²
+2 000 €,Luxembourg-Centre ville,42 m²
+2 200 €,Luxembourg-Centre ville,66 m²
+1 600 €,Luxembourg-Centre ville,30 m²
+3 200 €,Strassen,120 m²
+2 100 €,Esch-sur-Alzette,76 m²
+2 050 €,Luxembourg-Cessange,47 m²
+1 900 €,Luxembourg-Centre ville,51 m²
+1 300 €,Differdange,52 m²
+2 500 €,Luxembourg-Centre ville,83 m²
+1 750 €,Luxembourg-Hollerich,47 m²
+2 750 €,Luxembourg-Grund,85 m²
+2 100 €,Septfontaines,130 m²
+2 450 €,Luxembourg-Weimershof,50 m²
+1 950 €,Roeser,61 m²
+1 650 €,Luxembourg-Cessange,38 m²
+1 900 €,Luxembourg-Gare,55 m²
+2 400 €,Luxembourg-Gare,96 m²
+2 490 €,Niederdonven,90 m²
+2 700 €,Luxembourg-Grund,71 m²
+3 100 €,Luxembourg-Kirchberg,108 m²
+3 900 €,Luxembourg-Belair,160 m²
+1 500 €,Ettelbruck,72 m²
+1 600 €,Luxembourg-Muhlenbach,40 m²
+2 100 €,Luxembourg-Limpertsberg,40 m²
+2 100 €,Junglinster,57 m²
+2 400 €,Differdange,96 m²
+3 200 €,Luxembourg-Belair,115 m²
+2 600 €,Luxembourg-Merl,78 m²
+1 650 €,Luxembourg-Merl,27 m²
+2 100 €,Luxembourg-Cessange,66 m²
+1 500 €,Luxembourg-Rollingergrund,35 m²
+2 200 €,Bridel,100 m²
+2 300 €,Luxembourg-Neudorf,68 m²
+1 800 €,Luxembourg-Rollingergrund,53 m²
+2 650 €,Luxembourg-Limpertsberg,75 m²
 1 200 €,Luxembourg-Hollerich,16 m²
+3 200 €,Luxembourg-Limpertsberg,95 m²
+1 500 €,Niederkorn,45 m²
+1 400 €,Rodange,30 m²
 750 €,Kayl,N/A
+1 500 €,Pétange,42 m²
+2 900 €,Esch-sur-Alzette,175 m²
+1 800 €,Luxembourg-Gare,57 m²
 850 €,Luxembourg-Weimerskirch,11 m²
 950 €,Luxembourg-Weimerskirch,13 m²
+4 550 €,Luxembourg-Centre ville,140 m²
+1 650 €,Luxembourg-Centre ville,55 m²
+2 900 €,Esch-sur-Alzette,175 m²
+2 300 €,Luxembourg-Gare,70 m²
+2 000 €,Helmsange,85 m²
+1 250 €,Luxembourg-Gare,30 m²
+2 550 €,Luxembourg-Centre ville,90 m²
+2 000 €,Luxembourg-Centre ville,87 m²
+3 200 €,Luxembourg-Centre ville,158 m²
+1 400 €,Esch-sur-Alzette,32 m²
 720 €,Schrassig,18 m²
+2 300 €,Luxembourg-Kirchberg,51 m²
+3 000 €,Fentange,100 m²
+2 050 €,Luxembourg-Bonnevoie,62 m²
+2 000 €,Luxembourg-Gasperich - Cloche d'or,60 m²
+2 000 €,Luxembourg-Centre ville,44 m²
+2 350 €,Luxembourg-Centre ville,66 m²
+4 000 €,Luxembourg-Centre ville,130 m²
+2 700 €,Luxembourg-Hollerich,100 m²
+2 400 €,Luxembourg-Centre ville,75 m²
+1 900 €,Luxembourg-Verlorenkost,55 m²
+2 500 €,Luxembourg-Centre ville,83 m²
+1 980 €,Mertzig,88 m²
+1 350 €,Doncols,73 m²
+3 400 €,Luxembourg-Limpertsberg,167 m²
+1 850 €,Strassen,54 m²
+1 650 €,Luxembourg-Neudorf,35 m²
+2 400 €,Luxembourg-Belair,69 m²
+1 350 €,Luxembourg-Belair,17 m²
+1 350 €,Luxembourg-Belair,17 m²
+1 350 €,Luxembourg-Belair,18 m²
+1 750 €,Luxembourg-Belair,27 m²
+1 500 €,Luxembourg-Belair,20 m²
 750 €,Luxembourg-Beggen,15 m²
+1 700 €,Bertrange,52 m²
+2 300 €,Steinsel,78 m²
+3 100 €,Luxembourg-Centre ville,96 m²
+2 100 €,Luxembourg-Gare,73 m²
+2 100 €,Luxembourg-Gare,73 m²
+3 100 €,Luxembourg-Centre ville,96 m²
+1 850 €,Gonderange,57 m²
+2 300 €,Steinsel,78 m²
+5 000 €,Luxembourg-Centre ville,260 m²
+2 400 €,Manternach,120 m²
+4 100 €,Bertrange,115 m²
+2 100 €,Luxembourg-Cents,57 m²
+2 000 €,Pétange,76 m²
+1 825 €,Luxembourg-Cessange,53 m²
+2 950 €,Luxembourg-Centre ville,92 m²
+2 000 €,Luxembourg-Kirchberg,49 m²
 750 €,Rodange,N/A
+2 300 €,Luxembourg-Limpertsberg,47 m²
+4 500 €,Luxembourg-Hollerich,138 m²
+2 500 €,Luxembourg-Beggen,103 m²
+2 950 €,Luxembourg-Belair,94 m²
+2 800 €,Luxembourg-Belair,80 m²
+3 400 €,Fentange,96 m²
 1 000 €,Luxembourg-Beggen,11 m²
+1 750 €,Differdange,59 m²
+2 200 €,Bertrange,56 m²
+1 800 €,Echternach,76 m²
+5 500 €,Luxembourg-Belair,178 m²
+3 400 €,Luxembourg-Limpertsberg,100 m²
+2 400 €,Luxembourg-Gare,90 m²
+3 600 €,Luxembourg-Neudorf,90 m²
+4 000 €,Lorentzweiler,126 m²
+2 600 €,Luxembourg-Centre ville,110 m²
+5 000 €,Luxembourg-Kirchberg,264 m²
+3 300 €,Junglinster,155 m²
 900 €,Helmsange,16 m²
+2 500 €,Luxembourg-Belair,90 m²
 900 €,Differdange,17 m²
 900 €,Differdange,15 m²
+2 400 €,Luxembourg-Cents,84 m²
+1 570 €,Pétange,58 m²
+3 200 €,Walferdange,95 m²
+1 850 €,Luxembourg-Centre ville,37 m²
+1 649 €,Luxembourg-Bonnevoie,38 m²
+2 700 €,Luxembourg-Centre ville,88 m²
+4 500 €,Luxembourg-Hollerich,138 m²
+4 200 €,Luxembourg-Belair,120 m²
+2 400 €,Luxembourg-Centre ville,85 m²
+1 950 €,Luxembourg-Gare,71 m²
+2 600 €,Luxembourg-Verlorenkost,100 m²
+De 300 € à 2 731 550 €,Luxembourg-Belair,De 13 à 178 m²
+3 600 €,Luxembourg-Belair,116 m²
+1 425 €,Luxembourg-Kirchberg,14 m²
+1 425 €,Luxembourg-Kirchberg,13 m²
+2 250 €,Luxembourg-Bonnevoie,88 m²
 1 000 €,Luxembourg-Hollerich,17 m²
+2 900 €,Luxembourg-Kirchberg,117 m²
 900 €,Luxembourg-Cents,12 m²
+1 400 €,Luxembourg-Belair,28 m²
+1 300 €,Dudelange,44 m²
+1 900 €,Pétange,70 m²
+2 450 €,Luxembourg-Gare,80 m²
+1 750 €,Luxembourg-Limpertsberg,45 m²
+3 600 €,Luxembourg-Cents,125 m²
+3 100 €,Hassel,100 m²
+2 500 €,Alzingen,88 m²
+3 600 €,Luxembourg-Gasperich - Cloche d'or,101 m²
+1 900 €,Luxembourg-Merl,50 m²
 830 €,Bollendorf-Pont,60 m²
+1 390 €,Esch-sur-Alzette,31 m²
+1 850 €,Wormeldange,90 m²
 200 €,Leudelange,40 m²
+1 700 €,Wickrange,54 m²
+1 550 €,Wickrange,56 m²
+1 650 €,Wickrange,53 m²
+2 550 €,Luxembourg-Kirchberg,84 m²
+2 920 €,Luxembourg-Kirchberg,104 m²
+2 150 €,Luxembourg-Kirchberg,60 m²
+1 850 €,Luxembourg-Kirchberg,55 m²
+1 750 €,Ettelbruck,46 m²
+1 800 €,Ettelbruck,46 m²
+2 300 €,Luxembourg-Gasperich - Cloche d'or,85 m²
+1 700 €,Luxembourg-Centre ville,45 m²
 900 €,Luxembourg-Bonnevoie,18 m²
 900 €,Luxembourg-Bonnevoie,16 m²
 900 €,Howald,18 m²
+2 300 €,Luxembourg-Hollerich,75 m²
+2 850 €,Luxembourg-Pfaffenthal,74 m²
+3 100 €,Luxembourg-Centre ville,96 m²
+2 350 €,Luxembourg-Centre ville,60 m²
+2 200 €,Luxembourg-Centre ville,63 m²
+2 700 €,Luxembourg-Kirchberg,90 m²
+3 400 €,Luxembourg-Belair,180 m²
 750 €,Niederkorn,14 m²
+1 800 €,Luxembourg-Kirchberg,86 m²
+2 300 €,Luxembourg-Gasperich - Cloche d'or,85 m²
+1 800 €,Mertzig,45 m²
 900 €,Luxembourg-Bonnevoie,16 m²
+1 800 €,Luxembourg-Weimerskirch,48 m²
 1 050 €,Luxembourg-Bonnevoie,20 m²
+1 700 €,Luxembourg-Merl,69 m²
+1 230 €,Luxembourg-Bonnevoie,22 m²
+1 350 €,Senningerberg,25 m²
+1 350 €,Senningerberg,25 m²
+2 100 €,Luxembourg-Centre Ville,70 m²
+2 900 €,Luxembourg-Belair,63 m²
+4 840 €,Luxembourg-Limpertsberg,155 m²
+3 400 €,Luxembourg-Limpertsberg,98 m²
+2 900 €,Luxembourg-Limpertsberg,90 m²
+2 550 €,Luxembourg-Limpertsberg,62 m²
+2 750 €,Luxembourg-Belair,58 m²
+1 750 €,Luxembourg-Limpertsberg,32 m²
+1 950 €,Luxembourg-Limpertsberg,45 m²
+2 200 €,Strassen,53 m²
+1 500 €,Strassen,15 m²
+2 800 €,Luxembourg-Gare,115 m²
+2 150 €,Luxembourg-Kirchberg,43 m²
 950 €,Luxembourg-Bonnevoie,N/A
 950 €,Luxembourg-Bonnevoie,N/A
 950 €,Luxembourg-Bonnevoie,N/A
-1 100 €,Luxembourg-Merl,15 m²
+2 400 €,Luxembourg-Neudorf,52 m²
+1 800 €,Luxembourg-Merl,48 m²
+1 800 €,Bertrange,48 m²
+1 300 €,Fentange,40 m²
+2 450 €,Sanem,120 m²
+2 300 €,Luxembourg-Limpertsberg,95 m²
+2 400 €,Luxembourg-Centre ville,75 m²
+4 200 €,Luxembourg-Centre ville,90 m²
+3 500 €,Luxembourg-Gare,80 m²
+3 800 €,Luxembourg-Kirchberg,90 m²
+2 500 €,Luxembourg-Centre ville,52 m²
+2 900 €,Luxembourg-Centre ville,63 m²
+2 750 €,Luxembourg-Centre ville,63 m²
+1 900 €,Luxembourg-Kirchberg,32 m²
+2 500 €,Luxembourg-Belair,52 m²
+4 840 €,Luxembourg-Centre ville,155 m²
+3 150 €,Luxembourg-Limpertsberg,100 m²
+2 400 €,Luxembourg-Hollerich,53 m²
+2 550 €,Luxembourg-Limpertsberg,72 m²
+2 950 €,Luxembourg-Limpertsberg,84 m²
+2 650 €,Luxembourg-Limpertsberg,93 m²
+2 400 €,Luxembourg-Limpertsberg,72 m²
+2 400 €,Luxembourg-Limpertsberg,60 m²
+2 550 €,Luxembourg-Limpertsberg,62 m²
+4 200 €,Luxembourg-Centre ville,90 m²
+3 500 €,Luxembourg-Gare,80 m²
+2 800 €,Luxembourg-Belair,59 m²
+2 750 €,Luxembourg-Kirchberg,63 m²
+2 600 €,Luxembourg-Centre ville,60 m²
+2 500 €,Luxembourg-Centre ville,52 m²
+2 900 €,Luxembourg-Centre ville,63 m²
+2 750 €,Luxembourg-Centre ville,63 m²
+1 900 €,Luxembourg-Kirchberg,32 m²
 1 100 €,Luxembourg-Merl,14 m²
 1 000 €,Luxembourg-Neudorf,14 m²
+2 550 €,Luxembourg-Limpertsberg,72 m²
+2 650 €,Luxembourg-Limpertsberg,93 m²
+2 550 €,Luxembourg-Centre ville,62 m²
+2 550 €,Luxembourg-Limpertsberg,73 m²
+2 450 €,Luxembourg-Grund,69 m²
+1 900 €,Luxembourg-Centre ville,32 m²
+2 500 €,Luxembourg-Belair,52 m²
+2 440 €,Luxembourg-Limpertsberg,62 m²
+4 840 €,Luxembourg-Centre ville,155 m²
+2 300 €,Luxembourg-Limpertsberg,70 m²
+3 150 €,Luxembourg-Limpertsberg,100 m²
+2 200 €,Luxembourg-Limpertsberg,60 m²
 1 100 €,Luxembourg-Belair,14 m²
+2 400 €,Luxembourg-Hollerich,53 m²
+2 950 €,Luxembourg-Limpertsberg,84 m²
+2 400 €,Luxembourg-Limpertsberg,63 m²
+1 400 €,Luxembourg-Limpertsberg,30 m²
+1 220 €,Luxembourg-Centre ville,17 m²
+1 320 €,Luxembourg-Centre ville,16 m²
+2 150 €,Luxembourg-Centre ville,67 m²
+1 750 €,Luxembourg-Centre ville,32 m²
 1 100 €,Luxembourg-Centre ville,15 m²
 1 150 €,Luxembourg-Centre ville,15 m²
+1 695 €,Luxembourg-Clausen,30 m²
+1 900 €,Luxembourg-Clausen,30 m²
+3 300 €,Luxembourg-Belair,110 m²
+1 800 €,Luxembourg-Centre ville,31 m²
+1 225 €,Hesperange,15 m²
 935 €,Schifflange,20 m²
+1 900 €,Crauthem,72 m²
+1 550 €,Luxembourg-Centre Ville,23 m²
 800 €,Esch-sur-Alzette,12 m²
+1 900 €,Dalheim,117 m²
+2 300 €,Luxembourg-Centre Ville,95 m²
 1 200 €,Niederkorn,25 m²
-1 100 €,Luxembourg-Bonnevoie,18 m²
-1 200 €,Luxembourg-Limpertsberg,15 m²
+2 300 €,Luxembourg-Gare,85 m²
+3 450 €,Luxembourg-Centre Ville,87 m²
+3 200 €,Luxembourg-Centre Ville,95 m²
+3 500 €,Luxembourg-Centre Ville,141 m²
+3 450 €,Luxembourg-Centre Ville,87 m²
+2 100 €,Luxembourg-Centre Ville,55 m²
+3 200 €,Luxembourg-Limpertsberg,95 m²
+1 400 €,Luxembourg-Centre Ville,30 m²
+2 450 €,Luxembourg-Centre Ville,69 m²
+2 400 €,Luxembourg-Limpertsberg,62 m²
+4 950 €,Luxembourg-Limpertsberg,166 m²
+2 300 €,Luxembourg-Centre ville,52 m²
+3 950 €,Luxembourg-Limpertsberg,175 m²
+3 300 €,Luxembourg-Centre ville,85 m²
+2 200 €,Luxembourg-Centre ville,60 m²
+2 400 €,Luxembourg-Centre ville,53 m²
+2 950 €,Luxembourg-Centre ville,84 m²
+2 550 €,Luxembourg-Centre ville,72 m²
+2 400 €,Luxembourg-Centre ville,62 m²
+4 950 €,Luxembourg-Limpertsberg,166 m²
+2 300 €,Luxembourg-Centre ville,52 m²
+2 550 €,Luxembourg-Centre ville,62 m²
+2 800 €,Luxembourg-Centre ville,58 m²
+3 300 €,Luxembourg-Centre ville,74 m²
+2 550 €,Luxembourg-Centre ville,65 m²
+1 900 €,Luxembourg-Centre ville,30 m²
+2 400 €,Luxembourg-Limpertsberg,72 m²
+2 800 €,Luxembourg-Centre ville,59 m²
+2 550 €,Luxembourg-Kirchberg,65 m²
 1 080 €,Luxembourg-Eich,14 m²
+4 000 €,Luxembourg-Centre Ville,125 m²
+3 200 €,Luxembourg-Centre Ville,95 m²
+3 450 €,Luxembourg-Centre Ville,87 m²
+3 500 €,Luxembourg-Centre Ville,141 m²
+2 100 €,Luxembourg-Centre Ville,55 m²
+1 500 €,Luxembourg-Limpertsberg,30 m²
+2 450 €,Luxembourg-Centre Ville,69 m²
+3 200 €,Luxembourg-Limpertsberg,95 m²
+1 400 €,Luxembourg-Centre Ville,30 m²
+2 400 €,Luxembourg-Centre ville,62 m²
+1 200 €,Luxembourg-Limpertsberg,15 m²
+2 400 €,Luxembourg-Merl,53 m²
+1 500 €,Luxembourg-Limpertsberg,30 m²
+1 500 €,Luxembourg-Limpertsberg,33 m²
+1 500 €,Hesperange,64 m²
+1 600 €,Weidingen,84 m²
+1 550 €,Weidingen,71 m²
+1 800 €,Schuttrange,65 m²
+1 500 €,Luxembourg-Limpertsberg,30 m²
 675 €,Septfontaines,13 m²
+2 900 €,Esch-sur-Alzette,175 m²
+2 800 €,Luxembourg-Centre ville,91 m²
+2 550 €,Luxembourg-Limpertsberg,62 m²
+1 900 €,Luxembourg-Centre ville,30 m²
+4 400 €,Luxembourg-Centre ville,156 m²
+2 300 €,Luxembourg-Limpertsberg,75 m²
 1 100 €,Luxembourg-Bonnevoie,15 m²
 1 100 €,Luxembourg-Centre ville,15 m²
+1 300 €,Luxembourg-Bonnevoie,18 m²
+2 550 €,Luxembourg-Limpertsberg,62 m²
+2 400 €,Luxembourg-Centre ville,72 m²
+1 900 €,Luxembourg-Kirchberg,30 m²
+1 900 €,Luxembourg-Centre ville,30 m²
+2 400 €,Luxembourg-Limpertsberg,72 m²
+1 300 €,Luxembourg-Centre ville,18 m²
 675 €,Septfontaines,13 m²
+1 350 €,Lieler,84 m²
+1 450 €,Clervaux,83 m²
 1 200 €,Clervaux,70 m²
+1 400 €,Diekirch,60 m²
+1 300 €,Wahlhausen,90 m²
+3 100 €,Luxembourg-Gare,94 m²
+3 100 €,Luxembourg-Hollerich,94 m²
+3 400 €,Luxembourg-Belair,180 m²
+2 600 €,Luxembourg-Beggen,84 m²
+3 200 €,Luxembourg-Centre ville,100 m²
+2 295 €,Luxembourg-Belair,76 m²
+2 650 €,Luxembourg-Belair,95 m²
+1 850 €,Pétange,67 m²
+2 300 €,Luxembourg-Dommeldange,105 m²
+1 500 €,Crauthem,72 m²
+2 100 €,Kayl,90 m²
+1 950 €,Luxembourg-Kirchberg,43 m²
+1 450 €,Schifflange,38 m²
+5 031 €,Strassen,108 m²
+2 567 €,Strassen,49 m²
+5 051 €,Strassen,129 m²
+2 133 €,Strassen,50 m²
+2 900 €,Luxembourg-Weimershof,130 m²
+1 550 €,Esch-sur-Alzette,45 m²
+3 400 €,Luxembourg-Merl,130 m²
+2 240 €,Bissen,78 m²
+2 450 €,Luxembourg-Dommeldange,111 m²
+2 400 €,Bertrange,92 m²
+1 500 €,Luxembourg-Rollingergrund,26 m²
+5 000 €,Luxembourg-Centre ville,260 m²
+3 200 €,Luxembourg-Kirchberg,88 m²
+2 400 €,Luxembourg-Belair,74 m²
+4 500 €,Luxembourg-Limpertsberg,160 m²
+2 100 €,Belval,93 m²
+4 400 €,Luxembourg-Grund,145 m²
+2 400 €,Luxembourg-Cents,85 m²
 850 €,Beaufort,40 m²
+1 500 €,Eselborn,80 m²
+1 350 €,Luxembourg-Beggen,36 m²
 1 050 €,Esch-sur-Alzette,25 m²
+3 137 €,Strassen,81 m²
+2 175 €,Strassen,50 m²
+1 980 €,Esch-sur-Alzette,130 m²
+1 600 €,Luxembourg-Beggen,35 m²
+2 500 €,Luxembourg-Muhlenbach,82 m²
+2 250 €,Luxembourg-Gare,50 m²
 900 €,Luxembourg-Rollingergrund,15 m²
+2 950 €,Luxembourg-Centre ville,115 m²
+6 000 €,Luxembourg-Centre Ville,230 m²
+2 000 €,Luxembourg-Merl,60 m²
+1 750 €,Luxembourg-Belair,49 m²
+2 300 €,Luxembourg-Merl,43 m²
+1 600 €,Hostert (Niederanven),48 m²
+1 850 €,Luxembourg-Kirchberg,48 m²
+2 300 €,Luxembourg-Merl,43 m²
+2 300 €,Luxembourg-Merl,43 m²
+2 800 €,Luxembourg-Limpertsberg,90 m²
+10 500 €,Luxembourg-Merl,500 m²
+2 000 €,Strassen,39 m²
+2 000 €,Pétange,125 m²
+3 200 €,Keispelt,110 m²
+1 390 €,Luxembourg-Gare,35 m²
+1 850 €,Luxembourg-Kirchberg,42 m²
+2 230 €,Luxembourg-Limpertsberg,90 m²
 1 000 €,Luxembourg-Limpertsberg,15 m²
 1 000 €,Luxembourg-Centre ville,14 m²
 1 000 €,Luxembourg-Merl,15 m²
+2 300 €,Luxembourg-Rollingergrund,90 m²
+1 350 €,Luxembourg-Gare,35 m²
 1 000 €,Luxembourg-Merl,15 m²
 1 150 €,Luxembourg-Merl,18 m²
 980 €,Luxembourg-Merl,15 m²
@@ -123,47 +832,220 @@ Price,Location,Surface
 1 000 €,Luxembourg-Hollerich,15 m²
 1 000 €,Luxembourg-Hollerich,15 m²
 850 €,Luxembourg-Merl,15 m²
+1 650 €,Luxembourg-Merl,37 m²
+2 000 €,Luxembourg-Bonnevoie,56 m²
 750 €,Esch-sur-Alzette,12 m²
+2 700 €,Mamer,125 m²
+2 100 €,Luxembourg-Centre ville,50 m²
+1 700 €,Belvaux,26 m²
+1 360 €,Luxembourg-Bonnevoie,16 m²
+1 750 €,Strassen,80 m²
+2 060 €,Luxembourg-Merl,52 m²
+1 800 €,Luxembourg-Centre ville,33 m²
+1 400 €,Luxembourg-Limpertsberg,30 m²
+2 200 €,Noertzange,118 m²
+1 680 €,Wormeldange,71 m²
 950 €,Luxembourg-Centre ville,14 m²
+3 070 €,Ahn,192 m²
+1 900 €,Greiveldange,100 m²
+1 800 €,Esch-sur-Alzette,75 m²
+2 270 €,Luxembourg-Gasperich - Cloche d'or,54 m²
+2 500 €,Esch-sur-Alzette,125 m²
+1 600 €,Kehlen,66 m²
 950 €,Luxembourg-Centre ville,18 m²
+2 500 €,Luxembourg-Centre ville,76 m²
+2 380 €,Luxembourg-Centre ville,76 m²
+1 600 €,Marnach,80 m²
+1 250 €,Weiswampach,65 m²
+2 410 €,Strassen,61 m²
+2 130 €,Strassen,61 m²
+2 110 €,Strassen,59 m²
 900 €,Luxembourg-Bonnevoie,12 m²
+2 000 €,Luxembourg-Bonnevoie,74 m²
+3 000 €,Strassen,86 m²
+2 830 €,Luxembourg-Merl,50 m²
+2 750 €,Luxembourg-Merl,50 m²
+2 640 €,Strassen,86 m²
+2 420 €,Strassen,61 m²
+2 300 €,Strassen,56 m²
+2 250 €,Luxembourg-Merl,50 m²
+3 630 €,Luxembourg-Merl,91 m²
+2 830 €,Luxembourg-Merl,50 m²
+2 700 €,Strassen,65 m²
+2 480 €,Luxembourg-Merl,50 m²
+3 130 €,Luxembourg-Merl,89 m²
+2 750 €,Luxembourg-Merl,50 m²
+2 640 €,Strassen,86 m²
+3 130 €,Strassen,104 m²
+2 210 €,Strassen,61 m²
+3 000 €,Strassen,86 m²
 950 €,Luxembourg-Limpertsberg,15 m²
+1 750 €,Luxembourg-Hollerich,33 m²
+3 070 €,Ahn,192 m²
+2 600 €,Niederkorn,109 m²
+3 200 €,Luxembourg-Hollerich,150 m²
+1 800 €,Mersch,65 m²
 1 200 €,Luxembourg-Belair,31 m²
+1 240 €,Luxembourg-Limpertsberg,25 m²
+10 000 €,Luxembourg-Kirchberg,279 m²
 1 200 €,Luxembourg-Centre ville,22 m²
+1 700 €,Lintgen,61 m²
+1 390 €,Luxembourg-Gare,35 m²
+1 700 €,Luxembourg-Gare,56 m²
+1 700 €,Luxembourg-Gare,54 m²
+1 700 €,Luxembourg-Gare,55 m²
+1 750 €,Luxembourg-Gare,57 m²
+2 400 €,Garnich,99 m²
+1 800 €,Belval,43 m²
+2 200 €,Belval,60 m²
 895 €,Luxembourg-Gare,14 m²
+1 700 €,Luxembourg-Gare,55 m²
+1 700 €,Luxembourg-Gare,54 m²
+1 750 €,Luxembourg-Gare,57 m²
+1 700 €,Luxembourg-Gare,56 m²
+2 400 €,Garnich,99 m²
 1 200 €,Luxembourg-Neudorf,18 m²
+4 950 €,Luxembourg-Belair,147 m²
+1 800 €,Bereldange,54 m²
+1 800 €,Luxembourg-Muhlenbach,53 m²
+2 150 €,Luxembourg-Bonnevoie,75 m²
+2 100 €,Contern,79 m²
+18 000 €,Luxembourg-Gare,238 m²
+2 000 €,Luxembourg-Gare,N/A
+1 600 €,Luxembourg-Gare,40 m²
+3 500 €,Hassel,187 m²
+2 200 €,Schwebsange,82 m²
+2 300 €,Luxembourg-Beggen,78 m²
+2 200 €,Remich,77 m²
+3 300 €,Bridel,110 m²
+1 800 €,Luxembourg-Bonnevoie,59 m²
+1 800 €,Luxembourg-Bonnevoie,59 m²
+2 200 €,Bertrange,N/A
 1 100 €,Luxembourg-Centre ville,16 m²
+2 000 €,Luxembourg-Centre ville,49 m²
+2 995 €,Luxembourg-Centre ville,96 m²
+1 650 €,Luxembourg-Centre ville,43 m²
+1 700 €,Dudelange,68 m²
+1 950 €,Luxembourg-Bonnevoie,55 m²
+1 840 €,Luxembourg-Gare,44 m²
 1 150 €,Luxembourg-Bonnevoie,13 m²
+1 950 €,Luxembourg-Hollerich,63 m²
+1 650 €,Luxembourg-Centre ville,43 m²
+2 800 €,Luxembourg-Bonnevoie,78 m²
+1 500 €,Niederanven,20 m²
 1 000 €,Useldange,20 m²
+2 200 €,Luxembourg-Centre ville,57 m²
+1 750 €,Luxembourg-Centre ville,40 m²
+1 800 €,Luxembourg-Gasperich - Cloche d'or,53 m²
+2 200 €,Luxembourg-Clausen,72 m²
+1 700 €,Luxembourg-Gare,59 m²
+2 700 €,Hesperange,160 m²
+2 200 €,Luxembourg-Centre ville,72 m²
+1 500 €,Luxembourg-Belair,60 m²
+1 900 €,Dippach,75 m²
 950 €,Luxembourg-Gasperich - Cloche d'or,18 m²
 1 200 €,Luxembourg-Limpertsberg,104 m²
-800 €,Roodt-sur-Syre,18 m²
+2 500 €,Luxembourg-Cents,111 m²
+1 700 €,Mondorf-les-Bains,78 m²
+1 790 €,Luxembourg-Bonnevoie,30 m²
+1 790 €,Luxembourg-Bonnevoie,30 m²
+1 950 €,Grevenmacher,100 m²
+1 450 €,Luxembourg-Gasperich - Cloche d'or,35 m²
+1 650 €,Esch-sur-Alzette,52 m²
+1 550 €,Dudelange,70 m²
+1 500 €,Strassen,16 m²
+1 500 €,Luxembourg-Kirchberg,16 m²
+1 500 €,Luxembourg-Kirchberg,16 m²
+1 500 €,Luxembourg-Kirchberg,16 m²
+1 400 €,Luxembourg-Gasperich - Cloche d'or,25 m²
+1 350 €,Luxembourg-Gasperich - Cloche d'or,23 m²
+2 450 €,Mersch,100 m²
 1 190 €,Rodange,37 m²
+2 200 €,Lamadelaine,N/A
+1 490 €,Rodange,55 m²
+1 490 €,Lamadelaine,N/A
+3 750 €,Luxembourg-Rollingergrund,182 m²
 1 000 €,Luxembourg-Centre Ville,14 m²
 1 000 €,Luxembourg-Merl,16 m²
 1 150 €,Luxembourg-Merl,15 m²
+1 800 €,Wasserbillig,63 m²
+1 500 €,Strassen,15 m²
 1 170 €,Hesperange,36 m²
 870 €,Hesperange,13 m²
+1 650 €,Luxembourg-Belair,35 m²
+1 350 €,Luxembourg-Gasperich - Cloche d'or,23 m²
 900 €,Belvaux,16 m²
+2 700 €,Wasserbillig,88 m²
 1 000 €,Luxembourg-Belair,14 m²
+1 325 €,Belvaux,30 m²
 990 €,Luxembourg-Cessange,14 m²
+1 700 €,Luxembourg-Gare,35 m²
+1 400 €,Luxembourg-Gasperich - Cloche d'or,23 m²
+1 350 €,Luxembourg-Hollerich,150 m²
+1 700 €,Luxembourg-Centre Ville,30 m²
+1 500 €,Luxembourg-Gare,30 m²
 870 €,Strassen,16 m²
 1 000 €,Rumelange,N/A
+2 900 €,Bereldange,90 m²
+2 500 €,Bereldange,86 m²
 1 190 €,Hesperange,36 m²
+2 999 €,Luxembourg-Limpertsberg,91 m²
 900 €,Strassen,18 m²
+2 100 €,Schifflange,75 m²
 1 050 €,Luxembourg-Hollerich,25 m²
+1 350 €,Luxembourg-Rollingergrund,14 m²
+1 900 €,Luxembourg-Limpertsberg,60 m²
+1 400 €,Luxembourg-Belair,20 m²
+2 300 €,Esch-sur-Alzette,82 m²
 1 000 €,Luxembourg-Gasperich - Cloche d'or,80 m²
+4 500 €,Oetrange,200 m²
+1 750 €,Luxembourg-Gasperich - Cloche d'or,40 m²
+2 130 €,Bech,105 m²
 900 €,Luxembourg,92 m²
+1 750 €,Luxembourg-Gasperich - Cloche d'or,40 m²
 825 €,Luxembourg-Gasperich - Cloche d'or,12 m²
+2 500 €,Howald,75 m²
+2 750 €,Dudelange,90 m²
 900 €,Wasserbillig,20 m²
+1 650 €,Strassen,58 m²
+1 780 €,Luxembourg-Dommeldange,54 m²
+1 500 €,Wahl,74 m²
+1 750 €,Luxembourg-Beggen,50 m²
+2 250 €,Bereldange,110 m²
 1 100 €,Luxembourg-Weimerskirch,19 m²
+2 850 €,Luxembourg-Belair,100 m²
+2 200 €,Luxembourg-Bonnevoie,55 m²
+3 000 €,Beaufort,111 m²
+2 000 €,Luxembourg-Cents,58 m²
+2 800 €,Luxembourg-Cents,88 m²
+2 200 €,Luxembourg-Muhlenbach,63 m²
+2 200 €,Strassen,65 m²
 1 000 €,Esch-sur-Alzette,15 m²
 1 100 €,Luxembourg-Weimerskirch,14 m²
+1 500 €,Luxembourg-Gare,33 m²
+1 550 €,Luxembourg-Bonnevoie,55 m²
 1 200 €,Luxembourg-Gare,16 m²
+1 600 €,Differdange,57 m²
+1 800 €,Luxembourg-Belair,42 m²
 1 100 €,Dudelange,15 m²
+2 500 €,Steinfort,83 m²
+3 150 €,Luxembourg-Eich,100 m²
+3 200 €,Luxembourg-Weimerskirch,99 m²
+2 250 €,Luxembourg-Neudorf,53 m²
 800 €,Esch-sur-Alzette,N/A
+1 950 €,Luxembourg-Gare,76 m²
+5 000 €,Luxembourg-Clausen,78 m²
+1 830 €,Luxembourg-Gasperich - Cloche d'or,16 m²
+2 300 €,Luxembourg-Centre ville,20 m²
+2 165 €,Luxembourg-Cessange,16 m²
+2 235 €,Luxembourg-Cessange,22 m²
+1 850 €,Luxembourg-Merl,51 m²
+2 200 €,Luxembourg,50 m²
+3 000 €,Luxembourg-Merl,110 m²
+1 725 €,Lintgen,100 m²
 1 125 €,Luxembourg-Merl,10 m²
 965 €,Luxembourg-Dommeldange,9 m²
+1 340 €,Bascharage,47 m²
 935 €,Bascharage,12 m²
 890 €,Bascharage,16 m²
 1 090 €,Luxembourg-Limpertsberg,10 m²
@@ -187,6 +1069,7 @@ Price,Location,Surface
 1 025 €,Luxembourg-Neudorf,15 m²
 970 €,Luxembourg-Neudorf,10 m²
 1 140 €,Luxembourg-Gasperich - Cloche d'or,21 m²
+1 250 €,Luxembourg-Belair,28 m²
 1 055 €,Luxembourg-Limpertsberg,10 m²
 920 €,Luxembourg-Bonnevoie,10 m²
 1 015 €,Luxembourg-Hollerich,10 m²
@@ -208,10 +1091,12 @@ Price,Location,Surface
 985 €,Luxembourg-Neudorf,12 m²
 1 090 €,Luxembourg-Belair,14 m²
 1 100 €,Luxembourg-Belair,15 m²
+1 250 €,Luxembourg-Centre,18 m²
 980 €,Reckange-sur-Mess,16 m²
 1 060 €,Luxembourg-Eich,14 m²
 1 000 €,Howald,12 m²
 935 €,Bascharage,14 m²
+1 300 €,Luxembourg-Limpertsberg,16 m²
 1 070 €,Luxembourg-Limpertsberg,12 m²
 1 045 €,Strassen,17 m²
 895 €,Capellen,14 m²
@@ -231,28 +1116,98 @@ Price,Location,Surface
 910 €,Luxembourg-Bonnevoie,9 m²
 915 €,Luxembourg-Bonnevoie,10 m²
 925 €,Bascharage,16 m²
+1 700 €,Luxembourg-Gare,32 m²
 940 €,Bascharage,15 m²
 800 €,Bascharage,14 m²
 965 €,Luxembourg-Eich,9 m²
 910 €,Luxembourg-Gare,11 m²
+1 480 €,Frisange,36 m²
 970 €,Luxembourg-Neudorf,10 m²
 1 070 €,Leudelange,28 m²
 990 €,Luxembourg-Gare,12 m²
 1 050 €,Luxembourg-Hollerich,13 m²
 1 035 €,Luxembourg-Bonnevoie,15 m²
+1 500 €,Luxembourg-Gare,30 m²
+5 700 €,Luxembourg-Limpertsberg,191 m²
 1 100 €,Crauthem,14 m²
+2 750 €,Luxembourg-Muhlenbach,93 m²
 1 050 €,Hollerich Luxembourg,11 m²
 1 050 €,Hollerich Luxembourg,10 m²
 1 075 €,Luxembourg,16 m²
+1 490 €,Luxembourg-Muhlenbach,33 m²
+3 850 €,Bridel,122 m²
+2 400 €,Luxembourg-Limpertsberg,83 m²
+2 850 €,Kehlen,150 m²
+5 900 €,Luxembourg-Bonnevoie,331 m²
+1 450 €,Rumelange,60 m²
+5 800 €,Luxembourg-Clausen,70 m²
+4 800 €,Luxembourg-Clausen,48 m²
+4 000 €,Luxembourg-Limpertsberg,60 m²
+2 800 €,Luxembourg-Limpertsberg,43 m²
+7 500 €,Luxembourg-Centre ville,105 m²
+3 300 €,Luxembourg-Gare,32 m²
+4 800 €,Luxembourg-Gasperich - Cloche d'or,59 m²
+3 000 €,Luxembourg-Bonnevoie,35 m²
+5 000 €,Luxembourg-Gasperich - Cloche d'or,55 m²
 750 €,Esch-sur-Alzette,12 m²
+1 250 €,Luxembourg-Gare,14 m²
 950 €,Luxembourg-Bonnevoie,13 m²
 1 000 €,Luxembourg-Gasperich - Cloche d'or,12 m²
 900 €,Bereldange,9 m²
 750 €,Esch-sur-Alzette,13 m²
 1 180 €,Luxembourg-Kirchberg,18 m²
+2 800 €,Luxembourg-Belair,80 m²
+1 550 €,Alzingen,51 m²
+2 850 €,Luxembourg-Limpertsberg,88 m²
+1 400 €,Howald,30 m²
+2 200 €,Oberanven,80 m²
+2 500 €,Dudelange,85 m²
 1 200 €,Differdange,30 m²
+2 010 €,Luxembourg-Gare,45 m²
+1 930 €,Luxembourg-Centre Ville,29 m²
+3 300 €,Luxembourg-Gare,96 m²
+2 530 €,Howald,97 m²
+1 830 €,Luxembourg-Muhlenbach,32 m²
+2 470 €,Luxembourg-Kirchberg,88 m²
+2 470 €,Luxembourg-Grund,80 m²
+7 200 €,Luxembourg-Centre Ville,63 m²
+2 720 €,Luxembourg-Kirchberg,75 m²
+8 700 €,Luxembourg-Centre Ville,84 m²
+2 860 €,Luxembourg-Kirchberg,89 m²
+2 630 €,Strassen,95 m²
+2 960 €,Luxembourg-Belair,95 m²
+1 680 €,Luxembourg-Cessange,34 m²
+3 993 €,Luxembourg-Gare,40 m²
+2 030 €,Luxembourg-Gasperich - Cloche d'or,34 m²
+1 940 €,Luxembourg-Eich,41 m²
+2 020 €,Luxembourg-Eich,41 m²
+6 631 €,Luxembourg-Gare,80 m²
+6 877 €,Luxembourg-Gare,40 m²
+1 690 €,Luxembourg-Cessange,35 m²
+8 438 €,Luxembourg-Centre Ville,62 m²
+2 270 €,Luxembourg-Bonnevoie,46 m²
+3 160 €,Luxembourg-Weimerskirch,120 m²
+3 230 €,Luxembourg-Limpertsberg,120 m²
+2 830 €,Luxembourg-Gasperich - Cloche d'or,80 m²
+3 030 €,Luxembourg-Neudorf,80 m²
+2 430 €,Senningerberg,88 m²
+1 810 €,Luxembourg-Gasperich - Cloche d'or,46 m²
+2 190 €,Luxembourg-Eich,65 m²
+1 950 €,Luxembourg-Bonnevoie,40 m²
+4 954 €,Luxembourg-Gare,40 m²
+1 300 €,Dudelange,16 m²
+1 700 €,Belvaux,65 m²
+1 775 €,Luxembourg-Cessange,54 m²
+3 000 €,Luxembourg-Limpertsberg,70 m²
+1 800 €,Luxembourg-Bonnevoie,39 m²
 800 €,Hesperange,12 m²
+2 300 €,Bergem,110 m²
 950 €,Luxembourg-Beggen,10 m²
+3 750 €,Kayl,160 m²
+9 125 €,Kayl,365 m²
+1 600 €,Luxembourg-Bonnevoie,60 m²
+1 875 €,Luxembourg-Limpertsberg,56 m²
+1 960 €,Dudelange,95 m²
 920 €,Luxembourg-Gasperich - Cloche d'or,9 m²
 640 €,Bereldange,9 m²
 640 €,Luxembourg-Gasperich - Cloche d'or,9 m²
@@ -279,6 +1234,7 @@ Price,Location,Surface
 700 €,Senningerberg,24 m²
 700 €,Luxembourg-Bonnevoie,10 m²
 670 €,Luxembourg-Cessange,11 m²
+1 950 €,Luxembourg-Eich,35 m²
 740 €,Mondercange,12 m²
 625 €,Capellen,14 m²
 625 €,Bascharage,15 m²
@@ -295,6 +1251,7 @@ Price,Location,Surface
 800 €,Luxembourg-Centre ville,9 m²
 800 €,Luxembourg-Centre ville,10 m²
 750 €,Luxembourg-Centre ville,10 m²
+1 550 €,Hesperange,31 m²
 775 €,Luxembourg-Centre ville,11 m²
 760 €,Luxembourg-Hamm,9 m²
 740 €,Luxembourg-Centre ville,9 m²
@@ -345,6 +1302,8 @@ Price,Location,Surface
 800 €,Luxembourg-Centre ville,17 m²
 875 €,Luxembourg-Centre ville,16 m²
 850 €,Luxembourg-Centre ville,11 m²
+1 550 €,Hesperange,31 m²
+1 300 €,Luxembourg-Kirchberg,13 m²
 1 050 €,Luxembourg-Bonnevoie,15 m²
 1 050 €,Luxembourg-Neudorf,13 m²
 950 €,Capellen,9 m²
@@ -367,6 +1326,8 @@ Price,Location,Surface
 675 €,Capellen,14 m²
 600 €,Esch-sur-Alzette,15 m²
 560 €,Esch-sur-Alzette,10 m²
+1 250 €,Luxembourg-Belair,16 m²
+1 250 €,Luxembourg-Bonnevoie,11 m²
 1 050 €,Luxembourg-Bonnevoie,10 m²
 1 000 €,Luxembourg-Beggen,13 m²
 975 €,Pontpierre,12 m²
@@ -376,16 +1337,20 @@ Price,Location,Surface
 1 050 €,Luxembourg-Gare,17 m²
 1 000 €,Luxembourg-Eich,11 m²
 975 €,Luxembourg-Eich,10 m²
+1 300 €,Luxembourg-Limpertsberg,16 m²
 1 100 €,Luxembourg-Bonnevoie,14 m²
 1 050 €,Luxembourg-Bonnevoie,13 m²
 950 €,Luxembourg-Beggen,13 m²
 925 €,Esch-sur-Alzette,10 m²
 1 100 €,Luxembourg-Belair,14 m²
 1 050 €,Luxembourg-Limpertsberg,10 m²
+1 350 €,Luxembourg-Hollerich,11 m²
 950 €,Esch-sur-Alzette,20 m²
 990 €,Luxembourg-Dommeldange,12 m²
 920 €,Luxembourg-Cessange,9 m²
 900 €,Reckange-Sur-Mess,19 m²
+1 950 €,Luxembourg-Gare,25 m²
+1 600 €,Hesperange,27 m²
 990 €,Hesperange,10 m²
 920 €,Luxembourg-Bonnevoie,9 m²
 920 €,Luxembourg-Dommeldange,9 m²
@@ -399,6 +1364,8 @@ Price,Location,Surface
 920 €,Bereldange,9 m²
 1 100 €,Strassen,13 m²
 875 €,Capellen,11 m²
+1 350 €,Luxembourg-Bonnevoie,15 m²
+1 250 €,Luxembourg-Gasperich - Cloche d'or,12 m²
 1 050 €,Luxembourg-Cents,11 m²
 1 050 €,Luxembourg-Belair,14 m²
 1 150 €,Luxembourg-Belair,18 m²
@@ -407,7 +1374,10 @@ Price,Location,Surface
 850 €,Esch-sur-Alzette,10 m²
 1 100 €,Luxembourg-Belair,11 m²
 925 €,Bascharage,15 m²
+1 250 €,Luxembourg-Bonnevoie,10 m²
+1 225 €,Luxembourg-Eich,20 m²
 1 150 €,Luxembourg-Rollingergrund,16 m²
+1 250 €,Luxembourg-Gare,14 m²
 1 050 €,Luxembourg-Bonnevoie,12 m²
 1 100 €,Esch-sur-Alzette,12 m²
 940 €,Pontpierre,12 m²
@@ -421,6 +1391,9 @@ Price,Location,Surface
 1 150 €,Luxembourg-Gasperich - Cloche d'or,10 m²
 1 100 €,Luxembourg-Belair,12 m²
 1 150 €,Luxembourg-Dommeldange,9 m²
+1 250 €,Luxembourg-Bonnevoie,12 m²
+1 250 €,Luxembourg-Cessange,15 m²
+1 250 €,Luxembourg-Belair,16 m²
 1 000 €,Luxembourg-Bonnevoie,10 m²
 1 025 €,Luxembourg-Bonnevoie,11 m²
 850 €,Esch-sur-Alzette,10 m²
@@ -428,6 +1401,7 @@ Price,Location,Surface
 1 100 €,Luxembourg-Merl,12 m²
 900 €,Luxembourg-Rollingergrund,10 m²
 1 050 €,Luxembourg-Cessange,15 m²
+1 300 €,Luxembourg-Bonnevoie,25 m²
 1 100 €,Luxembourg-Gare,17 m²
 1 050 €,Luxembourg-Beggen,10 m²
 1 050 €,Mamer,23 m²
@@ -456,6 +1430,7 @@ Price,Location,Surface
 975 €,Mondercange,16 m²
 875 €,Capellen,14 m²
 1 150 €,Luxembourg-Merl,12 m²
+1 300 €,Luxembourg-Limpertsberg,10 m²
 1 000 €,Bereldange,9 m²
 975 €,Luxembourg-Gare,11 m²
 950 €,Leudelange,16 m²
@@ -464,12 +1439,15 @@ Price,Location,Surface
 1 000 €,Crauthem,22 m²
 1 150 €,Luxembourg-Bonnevoie,11 m²
 1 050 €,Hesperange,10 m²
+1 300 €,Luxembourg-Eich,14 m²
+1 250 €,Luxembourg-Eich,16 m²
 1 100 €,Luxembourg-Belair,16 m²
 1 075 €,Luxembourg-Belair,14 m²
 925 €,Leudelange,28 m²
 950 €,Capellen,14 m²
 1 000 €,Luxembourg-Bonnevoie,9 m²
 1 050 €,Luxembourg-Cessange,15 m²
+1 250 €,Strassen,14 m²
 1 100 €,Luxembourg-Gasperich - Cloche d'or,15 m²
 1 050 €,Luxembourg-Bonnevoie,14 m²
 1 150 €,Luxembourg-Dommeldange,14 m²
@@ -503,6 +1481,7 @@ Price,Location,Surface
 1 000 €,Luxembourg-Gare,11 m²
 850 €,Bascharage,16 m²
 1 070 €,Luxembourg-Neudorf,13 m²
+1 250 €,Luxembourg-Bonnevoie,15 m²
 1 075 €,Luxembourg-Belair,14 m²
 1 025 €,Reckange-Sur-Mess,22 m²
 800 €,Esch-sur-Alzette,11 m²
@@ -515,9 +1494,15 @@ Price,Location,Surface
 925 €,Bascharage,16 m²
 925 €,Esch-sur-Alzette,10 m²
 850 €,Capellen,15 m²
+1 250 €,Strassen,3 m²
+1 250 €,Luxembourg-Cents,11 m²
 975 €,Luxembourg-Cessange,9 m²
 1 100 €,Luxembourg-Neudorf,9 m²
+1 250 €,Luxembourg-Gare,20 m²
 1 125 €,Luxembourg-Gare,11 m²
+1 850 €,Luxembourg-Gare,25 m²
+1 250 €,Luxembourg-Dommeldange,43 m²
+1 300 €,Luxembourg-Bonnevoie,25 m²
 1 000 €,Luxembourg-Centre ville,13 m²
 1 075 €,Luxembourg-Gare,11 m²
 1 100 €,Luxembourg-Belair,16 m²
@@ -530,13 +1515,17 @@ Price,Location,Surface
 1 050 €,Luxembourg-Gasperich - Cloche d'or,15 m²
 1 050 €,Luxembourg-Dommeldange,9 m²
 890 €,Bascharage,9 m²
+1 250 €,Luxembourg-Gare,11 m²
+1 250 €,Luxembourg-Gare,11 m²
 1 025 €,Mamer,16 m²
 900 €,Capellen,11 m²
 1 075 €,Luxembourg-Cents,11 m²
 1 040 €,Capellen,16 m²
 990 €,Luxembourg-Eich,9 m²
 1 075 €,Luxembourg-Bonnevoie,4 m²
+1 350 €,Luxembourg-Gare,12 m²
 950 €,Senningerberg,15 m²
+1 350 €,Luxembourg-Gare,15 m²
 1 075 €,Luxembourg-Gare,9 m²
 1 050 €,Luxembourg-Dommeldange,10 m²
 1 025 €,Luxembourg-Eich,9 m²
@@ -545,6 +1534,7 @@ Price,Location,Surface
 1 000 €,Luxembourg-Bonnevoie,10 m²
 1 150 €,Reckange-Sur-Mess,36 m²
 875 €,Capellen,14 m²
+1 250 €,Luxembourg-Gare,14 m²
 1 100 €,Luxembourg-Belair,16 m²
 1 060 €,Bertrange,15 m²
 1 025 €,Luxembourg-Eich,10 m²
@@ -554,6 +1544,8 @@ Price,Location,Surface
 1 000 €,Bereldange,9 m²
 950 €,Bascharage,16 m²
 925 €,Bascharage,16 m²
+1 300 €,Luxembourg-Limpertsberg,10 m²
+1 250 €,Luxembourg-Cents,15 m²
 1 100 €,Esch-sur-Alzette,12 m²
 875 €,Bascharage,14 m²
 925 €,Capellen,12 m²
@@ -593,6 +1585,7 @@ Price,Location,Surface
 750 €,Luxembourg-Cessange,12 m²
 1 025 €,Luxembourg-Gare,13 m²
 975 €,Luxembourg-Gasperich - Cloche d'or,12 m²
+1 300 €,Luxembourg-Eich,16 m²
 550 €,Esch-sur-Alzette,10 m²
 1 150 €,Strassen,16 m²
 850 €,Luxembourg-Limpertsberg,15 m²
@@ -667,6 +1660,7 @@ Price,Location,Surface
 675 €,Bascharage,16 m²
 1 000 €,Luxembourg-Centre ville,15 m²
 850 €,Esch-sur-Alzette,13 m²
+1 500 €,Luxembourg-Belair,28 m²
 850 €,Luxembourg-Bonnevoie,13 m²
 950 €,Luxembourg-Bonnevoie,10 m²
 1 000 €,Luxembourg-Bonnevoie,15 m²
@@ -694,6 +1688,7 @@ Price,Location,Surface
 950 €,Luxembourg-Centre ville,19 m²
 850 €,Esch-sur-Alzette,13 m²
 950 €,Luxembourg-Merl,12 m²
+1 800 €,Luxembourg-Belair,30 m²
 675 €,Luxembourg-Centre ville,16 m²
 900 €,Luxembourg-Merl,10 m²
 800 €,Luxembourg-Centre ville,15 m²
@@ -713,6 +1708,7 @@ Price,Location,Surface
 1 100 €,Strassen,30 m²
 700 €,Esch-sur-Alzette,15 m²
 850 €,Luxembourg-Hollerich,9 m²
+1 650 €,Luxembourg-Belair,28 m²
 600 €,Esch-sur-Alzette,11 m²
 950 €,Luxembourg-Gare,15 m²
 700 €,Senningerberg,15 m²
@@ -748,9 +1744,11 @@ Price,Location,Surface
 700 €,Bascharage,9 m²
 700 €,Senningerberg,15 m²
 900 €,Luxembourg-Dommeldange,9 m²
+1 700 €,Luxembourg-Gare,25 m²
 600 €,Esch-sur-Alzette,12 m²
 1 000 €,Luxembourg-Centre ville,20 m²
 950 €,Luxembourg-Eich,19 m²
+1 700 €,Luxembourg-Gare,25 m²
 950 €,Luxembourg-Cessange,14 m²
 900 €,Luxembourg-Gare,16 m²
 840 €,Senningerberg,13 m²
@@ -842,6 +1840,7 @@ Price,Location,Surface
 600 €,Esch-sur-Alzette,16 m²
 800 €,Luxembourg-Bonnevoie,20 m²
 700 €,Luxembourg-Gare,17 m²
+1 700 €,Luxembourg-Belair,49 m²
 900 €,Luxembourg-Kirchberg,11 m²
 800 €,Luxembourg-Bonnevoie,17 m²
 800 €,Leudelange,22 m²
@@ -1012,6 +2011,7 @@ Price,Location,Surface
 1 000 €,Luxembourg-Cessange,11 m²
 800 €,Luxembourg-Bonnevoie,13 m²
 1 200 €,Luxembourg-Cents,20 m²
+1 300 €,Luxembourg-Gasperich - Cloche d'or,13 m²
 800 €,Luxembourg-Gare,11 m²
 800 €,Luxembourg-Gasperich - Cloche d'or,10 m²
 750 €,Bereldange,14 m²
@@ -1084,6 +2084,7 @@ Price,Location,Surface
 1 050 €,Hesperange,16 m²
 1 200 €,Strassen,10 m²
 950 €,Luxembourg-Kirchberg,11 m²
+1 650 €,Hesperange,21 m²
 800 €,Esch-sur-Alzette,12 m²
 800 €,Luxembourg-Bonnevoie,10 m²
 800 €,Luxembourg-Neudorf,15 m²
@@ -1098,6 +2099,7 @@ Price,Location,Surface
 1 000 €,Luxembourg-Dommeldange,12 m²
 1 150 €,Luxembourg-Eich,20 m²
 625 €,Capellen,14 m²
+1 300 €,Luxembourg-Gasperich - Cloche d'or,12 m²
 650 €,Luxembourg-Neudorf,12 m²
 600 €,Esch-sur-Alzette,11 m²
 950 €,Luxembourg-Eich,12 m²
@@ -1222,6 +2224,10 @@ Price,Location,Surface
 800 €,Luxembourg-Cessange,11 m²
 775 €,Reckange-Sur-Mess,19 m²
 750 €,Mamer,16 m²
+1 650 €,Luxembourg-Centre ville,20 m²
+2 050 €,Luxembourg-Centre ville,55 m²
+1 600 €,Luxembourg-Centre ville,25 m²
+1 700 €,Luxembourg-Centre ville,25 m²
 750 €,Esch-sur-Alzette,14 m²
 700 €,Esch-sur-Alzette,15 m²
 600 €,Esch-sur-Alzette,14 m²
@@ -1295,6 +2301,7 @@ Price,Location,Surface
 750 €,Luxembourg-Centre ville,11 m²
 750 €,Luxembourg-Centre ville,N/A
 550 €,Esch-sur-Alzette,12 m²
+1 600 €,Luxembourg-Centre ville,25 m²
 850 €,Luxembourg-Centre ville,12 m²
 850 €,Luxembourg-Gare,15 m²
 850 €,Luxembourg-Kirchberg,9 m²
@@ -1303,6 +2310,7 @@ Price,Location,Surface
 825 €,Luxembourg-Centre ville,9 m²
 850 €,Luxembourg-Rollingergrund,11 m²
 850 €,Luxembourg-Cessange,11 m²
+1 900 €,Luxembourg-Gare,45 m²
 675 €,Esch-sur-Alzette,10 m²
 600 €,Esch-sur-Alzette,12 m²
 850 €,Luxembourg-Cessange,11 m²
@@ -1315,6 +2323,7 @@ Price,Location,Surface
 875 €,Luxembourg-Cessange,15 m²
 900 €,Luxembourg-Kirchberg,9 m²
 950 €,Luxembourg-Gasperich - Cloche d'or,15 m²
+1 800 €,Luxembourg-Gare,25 m²
 1 050 €,Luxembourg-Gasperich - Cloche d'or,15 m²
 1 000 €,Luxembourg-Gare,17 m²
 1 000 €,Luxembourg-Beggen,15 m²
@@ -1355,6 +2364,8 @@ Price,Location,Surface
 700 €,Mondercange,12 m²
 600 €,Bascharage,9 m²
 600 €,Bascharage,16 m²
+1 900 €,Luxembourg-Centre ville,45 m²
+1 800 €,Luxembourg-Cents,25 m²
 800 €,Luxembourg-Bonnevoie,9 m²
 800 €,Luxembourg-Bonnevoie,10 m²
 750 €,Esch-sur-Alzette,15 m²
@@ -1378,6 +2389,7 @@ Price,Location,Surface
 850 €,Luxembourg-Dommeldange,10 m²
 850 €,Luxembourg-Bonnevoie,16 m²
 900 €,Luxembourg-Dommeldange,10 m²
+1 800 €,Luxembourg-Belair,30 m²
 950 €,Luxembourg-Belair,15 m²
 850 €,Esch-sur-Alzette,27 m²
 750 €,Luxembourg-Limpertsberg,13 m²
@@ -1388,19 +2400,24 @@ Price,Location,Surface
 650 €,Esch-sur-Alzette,14 m²
 650 €,Bascharage,47 m²
 850 €,Esch-sur-Alzette,27 m²
+1 800 €,Luxembourg-Belair,30 m²
 750 €,Luxembourg-Belair,13 m²
+2 145 €,Luxembourg-Bonnevoie,55 m²
 850 €,Esch-sur-Alzette,27 m²
 800 €,Leudelange,30 m²
 850 €,Luxembourg-Bonnevoie,16 m²
 800 €,Luxembourg-Neudorf,15 m²
 750 €,Luxembourg-Belair,19 m²
+1 250 €,Luxembourg-Gare,14 m²
 950 €,Luxembourg-Cents,15 m²
 800 €,Bereldange,15 m²
 800 €,Luxembourg-Eich,15 m²
 950 €,Luxembourg-Belair,9 m²
+2 145 €,Luxembourg-Gare,55 m²
 650 €,Bascharage,9 m²
 650 €,Capellen,11 m²
 950 €,Esch-sur-Alzette,27 m²
+1 250 €,Luxembourg-Gare,14 m²
 825 €,Luxembourg-Dommeldange,10 m²
 800 €,Luxembourg-Gare,12 m²
 800 €,Luxembourg-Hollerich,13 m²
@@ -1412,10 +2429,13 @@ Price,Location,Surface
 900 €,Luxembourg-Gare,17 m²
 850 €,Luxembourg-Belair,17 m²
 850 €,Luxembourg-Gare,21 m²
+1 800 €,Luxembourg-Pulvermuehle,25 m²
+1 900 €,Luxembourg-Gare,45 m²
 725 €,Luxembourg-Limpertsberg,13 m²
 650 €,Esch-sur-Alzette,10 m²
 650 €,Esch-sur-Alzette,14 m²
 650 €,Bascharage,9 m²
+1 800 €,Luxembourg-Belair,30 m²
 800 €,Luxembourg-Bonnevoie,14 m²
 700 €,Mondercange,12 m²
 650 €,Capellen,12 m²
@@ -1440,6 +2460,8 @@ Price,Location,Surface
 800 €,Luxembourg-Dommeldange,10 m²
 800 €,Mamer,16 m²
 550 €,Esch-sur-Alzette,12 m²
+1 800 €,Luxembourg-Pulvermuehle,25 m²
+1 750 €,Luxembourg-Centre ville,40 m²
 800 €,Luxembourg-Gare,13 m²
 750 €,Capellen,12 m²
 500 €,Bascharage,12 m²
@@ -1450,6 +2472,8 @@ Price,Location,Surface
 650 €,Capellen,11 m²
 500 €,Bascharage,9 m²
 800 €,Capellen,16 m²
+1 800 €,Luxembourg-Pulvermuehle,25 m²
+1 750 €,Luxembourg-Gare,40 m²
 800 €,Luxembourg-Bonnevoie,9 m²
 700 €,Leudelange,14 m²
 650 €,Leudelange,16 m²
@@ -1500,6 +2524,8 @@ Price,Location,Surface
 775 €,Luxembourg-Cessange,10 m²
 900 €,Reckange-Sur-Mess,36 m²
 725 €,Luxembourg-Bonnevoie,12 m²
+1 400 €,Luxembourg-Centre ville,25 m²
+1 600 €,Luxembourg-Pulvermuehle,25 m²
 740 €,Luxembourg-Limpertsberg,15 m²
 1 000 €,Luxembourg-Centre ville,32 m²
 850 €,Luxembourg-Gasperich - Cloche d'or,13 m²
@@ -1563,6 +2589,7 @@ Price,Location,Surface
 750 €,Luxembourg-Cents,24 m²
 700 €,Luxembourg-Belair,11 m²
 750 €,Luxembourg-Limpertsberg,16 m²
+1 800 €,Luxembourg-Belair,30 m²
 850 €,Leudelange,14 m²
 950 €,Luxembourg-Belair,14 m²
 825 €,Luxembourg-Dommeldange,11 m²
@@ -2017,6 +3044,7 @@ Price,Location,Surface
 900 €,Luxembourg-Cents,12 m²
 950 €,Luxembourg-Neudorf,30 m²
 850 €,Luxembourg-Centre ville,19 m²
+1 700 €,Remich,80 m²
 750 €,Esch-sur-Alzette,15 m²
 700 €,Esch-sur-Alzette,12 m²
 950 €,Luxembourg-Centre ville,9 m²
@@ -2076,6 +3104,7 @@ Price,Location,Surface
 1 200 €,Luxembourg-Gare,13 m²
 950 €,Luxembourg-Cents,12 m²
 950 €,Leudelange,16 m²
+1 450 €,Mersch,29 m²
 700 €,Capellen,11 m²
 800 €,Esch-sur-Alzette,14 m²
 800 €,Luxembourg-Gare,11 m²
@@ -2178,13 +3207,13 @@ Price,Location,Surface
 740 €,Luxembourg-Neudorf,12 m²
 800 €,Luxembourg-Bonnevoie,10 m²
 850 €,Luxembourg-Centre ville,14 m²
+750 €,Esch-sur-Alzette,12 m²
+750 €,Esch-sur-Alzette,12 m²
+750 €,Esch-sur-Alzette,12 m²
+750 €,Esch-sur-Alzette,12 m²
+750 €,Esch-sur-Alzette,12 m²
 700 €,Esch-sur-Alzette,12 m²
 675 €,Esch-sur-Alzette,12 m²
-750 €,Esch-sur-Alzette,12 m²
-750 €,Esch-sur-Alzette,12 m²
-750 €,Esch-sur-Alzette,12 m²
-750 €,Esch-sur-Alzette,12 m²
-750 €,Esch-sur-Alzette,12 m²
 750 €,Esch-sur-Alzette,10 m²
 750 €,Esch-sur-Alzette,18 m²
 700 €,Esch-sur-Alzette,9 m²
@@ -2195,9 +3224,9 @@ Price,Location,Surface
 850 €,Esch-sur-Alzette,12 m²
 750 €,Esch-sur-Alzette,15 m²
 750 €,Esch-sur-Alzette,15 m²
-900 €,Esch-sur-Alzette,15 m²
-675 €,Esch-sur-Alzette,15 m²
 750 €,Esch-sur-Alzette,15 m²
+675 €,Esch-sur-Alzette,15 m²
+900 €,Esch-sur-Alzette,15 m²
 750 €,Esch-sur-Alzette,15 m²
 1 000 €,Luxembourg-Centre ville,13 m²
 800 €,Luxembourg-Limpertsberg,9 m²
@@ -2233,11 +3262,73 @@ Price,Location,Surface
 850 €,Luxembourg-Gare,12 m²
 800 €,Luxembourg-Cessange,9 m²
 850 €,Luxembourg-Cessange,15 m²
+1 800 €,Luxembourg-Gare,54 m²
+1 600 €,Luxembourg-Belair,55 m²
+1 550 €,Dudelange,42 m²
+1 950 €,Luxembourg-Hollerich,N/A
+1 450 €,Bech-Kleinmacher,65 m²
+1 750 €,Esch-sur-Alzette,80 m²
+1 500 €,Rodange,72 m²
+2 800 €,Luxembourg-Belair,80 m²
+1 650 €,Luxembourg-Eich,30 m²
+4 640 €,Luxembourg-Gare,40 m²
+4 640 €,Luxembourg-Gare,40 m²
+5 525 €,Luxembourg-Gare,40 m²
+2 600 €,Junglinster,120 m²
+2 040 €,Luxembourg-Grund,52 m²
+4 954 €,Luxembourg-Gare,40 m²
+4 200 €,Luxembourg-Gare,32 m²
+7 050 €,Luxembourg-Gare,80 m²
+4 954 €,Luxembourg-Gare,40 m²
+5 400 €,Luxembourg-Gare,40 m²
+3 000 €,Luxembourg-Kirchberg,87 m²
+1 700 €,Luxembourg-Bonnevoie,30 m²
+4 640 €,Luxembourg-Gare,40 m²
+5 584 €,Luxembourg-Grund,30 m²
+6 648 €,Luxembourg-Gare,80 m²
+2 220 €,Luxembourg-Bonnevoie,46 m²
+2 360 €,Luxembourg-Cessange,51 m²
+2 510 €,Luxembourg-Eich,76 m²
+8 867 €,Luxembourg-Centre Ville,62 m²
+4 148 €,Luxembourg-Gare,40 m²
+6 318 €,Luxembourg-Gare,40 m²
+3 124 €,Luxembourg-Gare,34 m²
+3 940 €,Luxembourg-Merl,131 m²
+2 610 €,Luxembourg-Gare,90 m²
+4 500 €,Luxembourg-Gasperich - Cloche d'or,100 m²
+6 648 €,Luxembourg-Gare,80 m²
+5 974 €,Luxembourg-Gare,80 m²
+3 200 €,Alzingen,131 m²
+1 650 €,Luxembourg-Limpertsberg,30 m²
+4 800 €,Luxembourg-Belair,146 m²
+2 200 €,Luxembourg-Centre ville,60 m²
+7 293 €,Luxembourg-Gare,40 m²
 975 €,Luxembourg-Bonnevoie,12 m²
+1 850 €,Mertert,100 m²
+1 350 €,Luxembourg-Gare,N/A
+4 954 €,Luxembourg-Hollerich,80 m²
+6 202 €,Luxembourg-Kirchberg,40 m²
+5 658 €,Luxembourg-Cessange,80 m²
+1 700 €,Luxembourg-Centre ville,32 m²
+4 640 €,Howald,40 m²
+2 000 €,Contern,63 m²
+2 400 €,Contern,80 m²
+2 300 €,Contern,63 m²
+1 975 €,Luxembourg-Bonnevoie,34 m²
+1 680 €,Luxembourg-Centre ville,30 m²
+2 600 €,Luxembourg-Gasperich - Cloche d'or,91 m²
+3 993 €,Luxembourg-Gare,40 m²
 1 000 €,Luxembourg-Bonnevoie,11 m²
 1 160 €,Luxembourg-Bonnevoie,11 m²
+2 600 €,Luxembourg-Gasperich - Cloche d'or,65 m²
+3 200 €,Bertrange,140 m²
+1 450 €,Luxembourg-Gare,45 m²
+2 800 €,Luxembourg-Gare,104 m²
 900 €,Luxembourg-Bonnevoie,12 m²
+1 700 €,Schifflange,52 m²
+1 800 €,Luxembourg-Centre ville,25 m²
 1 149 €,Luxembourg-Gasperich - Cloche d'or,19 m²
+2 350 €,Luxembourg-Kirchberg,58 m²
 850 €,Bettembourg,360 m²
 600 €,Esch-sur-Alzette,10 m²
 590 €,Esch-sur-Alzette,15 m²
@@ -2247,9 +3338,11 @@ Price,Location,Surface
 580 €,Esch-sur-Alzette,12 m²
 1 050 €,Luxembourg-Beggen,19 m²
 1 050 €,Luxembourg-Gare,17 m²
+1 450 €,Luxembourg-Centre ville,12 m²
 1 025 €,Luxembourg-Bonnevoie,10 m²
 1 050 €,Luxembourg-Beggen,13 m²
 1 050 €,Luxembourg-Beggen,10 m²
+1 550 €,Luxembourg-Centre ville,30 m²
 1 075 €,Luxembourg-Beggen,12 m²
 1 025 €,Luxembourg-Bonnevoie,10 m²
 1 075 €,Luxembourg-Kirchberg,13 m²
@@ -2310,6 +3403,8 @@ Price,Location,Surface
 700 €,Esch-sur-Alzette,10 m²
 800 €,Luxembourg-Bonnevoie,10 m²
 1 000 €,Luxembourg-Bonnevoie,15 m²
+2 925 €,Heisdorf,95 m²
+2 200 €,Esch-sur-Alzette,77 m²
 1 100 €,Bettembourg,10 m²
 900 €,Luxembourg-Neudorf,15 m²
 990 €,Luxembourg-Eich,13 m²
@@ -2317,29 +3412,74 @@ Price,Location,Surface
 900 €,Luxembourg-Neudorf,15 m²
 1 000 €,Luxembourg-Cessange,12 m²
 1 100 €,Luxembourg-Eich,15 m²
+2 300 €,Luxembourg-Neudorf,65 m²
+2 500 €,Luxembourg-Kirchberg,87 m²
 790 €,Mamer,15 m²
 1 050 €,Strassen,15 m²
+2 000 €,Luxembourg-Bonnevoie,N/A
+2 200 €,Strassen,75 m²
+1 600 €,Echternach,65 m²
 850 €,Luxembourg-Limpertsberg,10 m²
 900 €,Luxembourg-Bonnevoie,20 m²
 750 €,Niederdonven,18 m²
+1 800 €,Strassen,61 m²
 950 €,Capellen,15 m²
 1 100 €,Strassen,44 m²
+2 200 €,Flaxweiler,115 m²
+4 500 €,Ernster,220 m²
+2 300 €,Esch-sur-Alzette,125 m²
+7 722 €,Luxembourg-Gare,80 m²
 880 €,Schifflange,N/A
+2 400 €,Contern,82 m²
+1 590 €,Luxembourg-Hollerich,51 m²
+1 590 €,Strassen,55 m²
 990 €,Luxembourg-Centre ville,18 m²
+1 400 €,Belval,47 m²
 1 130 €,Luxembourg-Bonnevoie,11 m²
+2 300 €,Luxembourg-Centre ville,40 m²
+2 190 €,Luxembourg-Neudorf,64 m²
+1 550 €,Luxembourg-Bonnevoie,20 m²
 1 100 €,Luxembourg-Belair,17 m²
 910 €,Luxembourg-Bonnevoie,11 m²
+1 500 €,Luxembourg-Gare,25 m²
+1 630 €,Luxembourg-Hollerich,40 m²
 710 €,Helmsange,13 m²
+1 700 €,Luxembourg-Muhlenbach,45 m²
+1 980 €,Hobscheid,75 m²
 880 €,Pétange,N/A
+1 700 €,Luxembourg-Bonnevoie,60 m²
 950 €,Niederanven,13 m²
 1 100 €,Niederanven,17 m²
 950 €,Niederanven,13 m²
 1 100 €,Niederanven,21 m²
+3 000 €,Luxembourg-Belair,89 m²
+1 250 €,Dudelange,27 m²
 895 €,Luxembourg-Gare,12 m²
+6 450 €,Luxembourg-Centre ville,53 m²
+1 300 €,Luxembourg-Clausen,51 m²
+2 950 €,Luxembourg-Centre Ville,67 m²
+2 300 €,Luxembourg-Gare,81 m²
+4 350 €,Luxembourg,120 m²
 1 150 €,Beaufort,13 m²
 1 000 €,Luxembourg-Grund,15 m²
 900 €,Differdange,11 m²
+1 350 €,Ettelbruck,19 m²
+1 260 €,Ettelbruck,17 m²
 1 075 €,Ettelbruck,14 m²
 1 150 €,Luxembourg-Bonnevoie,15 m²
+1 400 €,Luxembourg-Centre ville,32 m²
+2 200 €,Rumelange,76 m²
+3 500 €,Luxembourg-Hamm,108 m²
 1 100 €,Luxembourg-Centre ville,20 m²
+1 600 €,Bereldange,50 m²
+1 800 €,Lorentzweiler,100 m²
+1 450 €,Bilsdorf,82 m²
+1 550 €,Diekirch,96 m²
+1 700 €,Luxembourg-Centre ville,32 m²
+1 500 €,Differdange,48 m²
+1 750 €,Bertrange,60 m²
+1 400 €,Dondelange,50 m²
+2 100 €,Sanem,83 m²
+1 950 €,Howald,57 m²
 1 000 €,Frisange,25 m²
+1 985 €,Luxembourg-Gasperich - Cloche d'or,50 m²

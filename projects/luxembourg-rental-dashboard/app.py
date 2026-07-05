@@ -8,11 +8,11 @@ st.set_page_config(page_title="Luxembourg Rental Dashboard", layout="wide")
 st.title("Luxembourg Rental Listings Dashboard")
 st.caption(
     "Public rental listing data scraped from athome.lu — no owner/tenant personal data. "
-    "Covers the ≤€1,200/month segment only (the scraper's search filter), not the full market."
+    "Covers the full advertised rental market, not a price-limited segment."
 )
 st.markdown(
     "Price and surface distributions, a price-vs-surface correlation, and listing "
-    "concentration by location — for the budget end of the Luxembourg rental market."
+    "concentration by location across the Luxembourg rental market."
 )
 
 
